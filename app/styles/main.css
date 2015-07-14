@@ -7,6 +7,12 @@ body{
 .topHeader+.container{
   margin-top: 30px;
 }
+
+.managePanel{
+  margin-left: 190px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
 /*--- header ---*/
 .topHeader{
   height: 107px;
@@ -29,9 +35,9 @@ body{
   position: relative;
   display: inline-block;
   height: 29px;
+  vertical-align: middle;
 }
 .topHeader .userInfoGroup{
-  top: 10px;
   margin-left: 15px;
 }
 .topHeader .userInfoGroup .userName{
@@ -143,7 +149,7 @@ button.msg+.righttopNum{
   background-color: #ff3737;
 }
 .secondGroup{
-  margin: 13px 0 0 0;
+  margin: 24px 0 0 0;
   text-align: right;
 }
 .manageNav{
