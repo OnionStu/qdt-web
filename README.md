@@ -1,2 +1,0 @@
-# qdt-web
-qdt-web

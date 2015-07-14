@@ -1,0 +1,148 @@
+.topHeader{
+  height: 107px;
+  min-width: 970px;
+  background: #158ad8;
+  color: #fff;
+}
+.container{
+  min-width: 970px;
+}
+.topHeader .search{
+  width: 184px;
+  height: 29px;
+  padding-right: 26px;
+  color: #999;
+}
+.firstGroup{
+  margin: 20px 0 0 0;
+}
+.topHeader .searchGroup,.topHeader .userBtnGroup,.topHeader .userInfoGroup{
+  position: relative;
+  display: inline-block;
+  height: 29px;
+}
+.topHeader .userInfoGroup{
+  top: 10px;
+  margin-left: 15px;
+}
+.userName{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 110px;
+  display: inline-block;
+  word-wrap: break-word;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.topHeader .userInfoGroup .dropdown-menu{
+  background: #117ac1;
+  min-width: 90px;
+  left: 50%;
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+}
+.topHeader .userInfoGroup .dropdown-menu li{
+  border-bottom: 1px solid #116caa;
+}
+.topHeader .userInfoGroup .dropdown-menu li:last-of-type{
+  border-bottom: none;
+}
+.topHeader .userInfoGroup .dropdown-menu .dropMenuIcon{
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}
+.dropMenuIcon.info{
+  background: url('../images/icon_user_info.png');
+}
+.dropMenuIcon.settings{
+  background: url('../images/icon_setting.png');
+}
+.dropMenuIcon.logout{
+  background: url('../images/icon_exit.png');
+}
+.topHeader .userInfoGroup .dropdown-menu a{
+  color: #fff;
+  padding: 3px 8px;
+  height: 34px;
+  line-height: 28px;
+}
+.topHeader .userInfoGroup .dropdown-menu a:hover{
+  background-color: #1374b6;
+}
+.topHeader .userInfoGroup .userAvatar{
+  position: relative;
+  top: -5px;
+  width: 34px;
+  height: 34px;
+}
+.topHeader button{
+  border: 0;
+  background: none;
+}
+.topHeader .searchGroup .searchCommit{
+  position: absolute;
+  border-radius: 4px;
+  height: 27px;
+  right: 0;
+  background-color: #fff;
+  color: #999;
+}
+.buttonContainer{
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+}
+.buttonContainer button{
+  width: 100%;
+  height: 100%;
+  background: #158ad8;
+
+}
+.buttonContainer button.apps{
+  background: url('../images/icon_data.png');
+}
+.buttonContainer button.tips{
+  background: url('../images/icon_ring.png');
+}
+.buttonContainer button.msg{
+  background: url('../images/icon_message.png');
+}
+.righttopNum{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  height: 17px;
+  padding: 0 5px;
+  border-radius: 7px;
+  text-align: center;
+  font-size: 12px
+}
+button.apps+.righttopNum{
+  background-color: #bdd630;
+}
+button.tips+.righttopNum{
+  background-color: #ffbf00;
+}
+button.msg+.righttopNum{
+  background-color: #ff3737;
+}
+.secondGroup{
+  margin: 13px 0 0 0;
+  text-align: right;
+}
+.manageNav{
+  width: 110px;
+  color: #fff;
+}
+.manageNav:focus,.manageNav:hover{
+  background: #117ac1;
+  color: #eee;
+}
