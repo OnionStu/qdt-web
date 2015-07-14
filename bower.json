@@ -1,0 +1,20 @@
+{
+  "name": "qdt-web",
+  "version": "0.0.0",
+  "homepage": "https://github.com/OnionStu/qdt-web",
+  "authors": [
+    "xylitol_lin <ruheng.lin@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/lib/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
