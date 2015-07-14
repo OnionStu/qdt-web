@@ -1,3 +1,7 @@
+body{
+  background-color: #f8f8f8;
+}
+
 .topHeader{
   height: 107px;
   min-width: 970px;
@@ -146,3 +150,6 @@ button.msg+.righttopNum{
   background: #117ac1;
   color: #eee;
 }
+
+
+
