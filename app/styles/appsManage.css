@@ -1,0 +1,34 @@
+.appsManage .leftNav{
+  width: 180px;
+  height: 475px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+.appsManage .leftNav ul{
+  padding: 0;
+}
+.appsManage .leftNav li{
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  list-style: none;
+}
+.appsManage .leftNav li:after{
+  content: '';
+  position: absolute;
+  top: 17px;
+  left: 48px;
+  width: 5px;
+  height: 5px;
+  background: #158ad8;
+}
+.appsManage .leftNavHeader{
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+}
+.appsManage .leftNavHeaderIcon{
+  display: inline-block;
+  
+}
