@@ -1,29 +1,113 @@
-html, body {
+html,
+body {
   width: 100%;
-  height: 100%;
+  height: 100%
 }
+
 .login-page {
   background-image: url(../images/login_bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position-x: center;
+  background-position-y: center
 }
-.content{
-  padding-top: 200px;
+
+.content {
+  padding-top: 15%
 }
+
 .login-box {
-  width: 400px;
-  height: 280px;
+  width: 560px;
+  height: 390px;
   margin: 0 auto;
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 3px 5px #666;
-  border-radius: 4px;
+  border-radius: 4px
 }
+
 .header {
   width: 60%;
-  margin: 0 auto;
+  margin: 0 auto 30px
 }
+
 .header img {
-  width: 100%;
+  width: 100%
+}
+
+.input-row {
+  width: 85%;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 36px
+}
+
+.input-row>label {
+  width: 15%;
+  padding: 0 15px;
+  font-weight: normal;
+  color: #676767
+}
+
+.input-row .form-control {
+  width: auto;
+  display: inline-block;
+  width: 80%;
+  height: 36px;
+  width: 300px
+}
+
+.checkbox {
+  line-height: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 15%
+}
+
+#forgetpwd {
+  font-size: 12px;
+  color: #0c81e1
+}
+
+.action-group {
+  margin-left: 15%
+}
+
+.btn-login,
+.btn-register {
+  width: 146px;
+  height: 36px;
+  border: none
+}
+
+.btn-login {
+  background-color: #158ad8;
+  color: #fff
+}
+
+.btn-login:hover,
+.btn-login.focus,
+.btn-login:focus,
+.btn-login:active,
+.btn-login.active {
+  background-color: #117ac1;
+  border: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none
+}
+
+.btn-register {
+  background-color: #14aa72;
+  color: #fff
+}
+
+.btn-register:hover,
+.btn-register.focus,
+.btn-register:focus,
+.btn-register:active,
+.btn-register.active {
+  background-color: #129c69;
+  border: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none
 }
