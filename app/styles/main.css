@@ -7,12 +7,6 @@ body{
 .topHeader+.container{
   margin-top: 30px;
 }
-
-.managePanel{
-  margin-left: 190px;
-  background: #fff;
-  border: 1px solid #ccc;
-}
 /*--- header ---*/
 .topHeader{
   height: 107px;
@@ -192,4 +186,90 @@ button.msg+.righttopNum{
 }
 .tableTitle.radioOption{
   width: 6%;
+}
+/* 左边导航栏 */
+.leftNav{
+  width: 180px;
+  height: 475px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+.leftNav ul{
+  padding: 0;
+}
+.leftNav li{
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  list-style: none;
+  cursor: pointer;
+}
+.leftNav li a{
+  text-decoration: none;
+  color: #000;
+}
+.leftNav li:hover{
+  background: #eee;
+}
+.leftNav li:after{
+  content: '';
+  position: absolute;
+  top: 17px;
+  left: 48px;
+  width: 5px;
+  height: 5px;
+  background: #158ad8;
+}
+.leftNav li.active{
+  background: #158ad8;
+}
+.leftNav li.active a{
+  color: #fff;
+}
+.leftNav li.active:after{
+  background: #fff;
+}
+.leftNav .header,.rightPanel .header{
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  border-bottom: 1px solid #ccc;
+}
+.leftNavHeaderIcon{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+/* 右边内容框 */
+.rightPanel{
+  margin-left: 190px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+.rightPanel .content{
+  padding: 40px 80px;
+  overflow: hidden;
+  position: relative;
+}
+.content .flag{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  background: url('../images/bg_step.png') no-repeat;
+  color: #fff;
+}
+.flag_icon{
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+  background: url("../images/icon_step.png");
+  vertical-align: middle;
 }

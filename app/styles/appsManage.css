@@ -1,73 +1,4 @@
-.appsManage .leftNav{
-  width: 180px;
-  height: 475px;
-  background: #fff;
-  border: 1px solid #ccc;
-}
-.appsManage .leftNav ul{
-  padding: 0;
-}
-.appsManage .leftNav li{
-  position: relative;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  list-style: none;
-  cursor: pointer;
-}
-.appsManage .leftNav li a{
-  text-decoration: none;
-  color: #000;
-}
-.appsManage .leftNav li:hover{
-  background: #eee;
-}
-.appsManage .leftNav li:after{
-  content: '';
-  position: absolute;
-  top: 17px;
-  left: 48px;
-  width: 5px;
-  height: 5px;
-  background: #158ad8;
-}
-.appsManage .leftNav li.active{
-  background: #158ad8;
-}
-.appsManage .leftNav li.active a{
-  color: #fff;
-}
-.appsManage .leftNav li.active:after{
-  background: #fff;
-}
-.appsManage .header{
-  height: 40px;
-  line-height: 40px;
-  padding: 0 20px;
-  border-bottom: 1px solid #ccc;
-}
-.managePanel .content{
-  padding: 40px 80px;
-  overflow: hidden;
-  position: relative;
-}
-.content .flag{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 160px;
-  padding: 0 20px;
-  height: 40px;
-  line-height: 40px;
-  background: url('../images/bg_step.png') no-repeat;
-  color: #fff;
-}
 .appsManage .leftNavHeaderIcon{
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  margin-right: 8px;
   background: url('../images/icon_application.png');
 }
 .uploadPrivateApp{
@@ -110,14 +41,6 @@
   display: inline-block;
   word-wrap: break-word;
   white-space: nowrap;
-  vertical-align: middle;
-}
-.flag_icon{
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  margin-right: 5px;
-  background: url("../images/icon_step.png");
   vertical-align: middle;
 }
 .tableBtnGroup{
