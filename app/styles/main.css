@@ -156,9 +156,10 @@ button.msg+.righttopNum{
   width: 110px;
   color: #fff;
 }
-.manageNav:focus,.manageNav:hover{
+.manageNav:focus,.manageNav:hover,.manageNav.active,.manageNav:active{
   background: #117ac1;
   color: #eee;
+  box-shadow:none;
 }
 /*--- end header ---*/
 
