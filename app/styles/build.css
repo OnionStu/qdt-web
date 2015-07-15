@@ -6,9 +6,7 @@
   margin-right: 8px;
   background: url('../images/icon_build.png');
 }
-.leftNav .header{
-  border: none;
-}
+
 #buildManage .content{
   padding: 15px;
 }

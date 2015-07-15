@@ -195,6 +195,9 @@ button.msg+.righttopNum{
   background: #fff;
   border: 1px solid #ccc;
 }
+.leftNav .header{
+  border: none;
+}
 .leftNav ul{
   padding: 0;
 }
