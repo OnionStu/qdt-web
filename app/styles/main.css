@@ -7,6 +7,14 @@ body{
 .topHeader+.container{
   margin-top: 30px;
 }
+.footer{
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #158ad8;
+  color: #fff;
+}
 /*--- header ---*/
 .topHeader{
   height: 107px;
@@ -181,6 +189,8 @@ button.msg+.righttopNum{
   height: 40px;
   text-align: center;
   border: 1px solid #ccc;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 .tableCell.radioOption{
   width: 10px;
@@ -247,6 +257,7 @@ button.msg+.righttopNum{
 /* 右边内容框 */
 .rightPanel{
   margin-left: 190px;
+  margin-bottom: 20px;
   background: #fff;
   border: 1px solid #ccc;
 }
@@ -273,4 +284,27 @@ button.msg+.righttopNum{
   margin-right: 5px;
   background: url("../images/icon_step.png");
   vertical-align: middle;
+}
+.pageList{
+  margin: 0;
+  padding: 10px 0;
+  overflow: hidden;
+  list-style: none;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.pageList li{
+  display: inline-block;
+  margin: 0 5px;
+}
+.pageList li.index{
+  width: 14px;
+  height: 20px;
+}
+.pageList li.active{
+  background: #158ad8;
+}
+.pageList li.active a{
+  color: #fff;
 }

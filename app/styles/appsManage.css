@@ -52,7 +52,26 @@
   height: 33px;
   color: #fff;
 }
-
+.tableBtnIcon{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+  
+}
+.detail .tableBtnIcon{
+  background: url('../images/icon_eye.png') no-repeat;
+}
+.edit .tableBtnIcon{
+  background: url('../images/icon_edit.png') no-repeat;
+}
+.upgrade .tableBtnIcon{
+  background: url('../images/icon_upgrade.png') no-repeat;
+}
+.delete .tableBtnIcon{
+  background: url('../images/icon_delete.png') no-repeat;
+}
 .btn.detail,.btn.edit{
   background: #158ad8;
 }
@@ -70,4 +89,51 @@
 }
 .btn.delete:hover,.btn.deleteAll:hover{
   background: #b62168; 
+}
+.btn.uploadSubmit{
+  color: #fff;
+  background: #158ad8; 
+}
+
+.detailPane{
+  margin: 30px 0 0 0;
+}
+.detialHeader{
+  height: 40px;
+  line-height: 40px;
+  background: #158ad8;
+  color: #fff;
+  text-align: center;
+}
+.detialContent{
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.detialContent table{
+  width: 100%;
+  table-layout: fixed;
+}
+.detialContent td{
+  width: 33.33%;
+  height: 40px;
+  padding: 0 15px;
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.uploadAppForm{
+  margin-top: 30px;
+}
+.uploadAppForm div{
+  text-align: center;
+  padding: 10px 0;
+}
+.uploadAppForm .textInput{
+  width: 60%
+}
+.uploadAppForm select{
+  display: inline-block;
+  width: 60%;
+  margin-left: 10px;
+  border-radius: 0;
 }
