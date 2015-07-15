@@ -47,7 +47,7 @@
   border-bottom: 1px solid #ccc;
 }
 .managePanel .content{
-  padding: 40px 20px;
+  padding: 40px 80px;
   overflow: hidden;
   position: relative;
 }
@@ -69,4 +69,82 @@
   vertical-align: middle;
   margin-right: 8px;
   background: url('../images/icon_application.png');
+}
+.uploadPrivateApp{
+  margin-top: 20px;
+}
+.fileInputBtn{
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  margin-left: 10px;
+  vertical-align: top;
+  background: #158ad8;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  cursor:pointer;
+}
+.fileInputBtn:hover{
+  text-decoration: none;
+  color: #fff;
+}
+.fileInputBtn input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 35px;
+  opacity: 0; 
+}
+.uploadTips{
+  margin: 10px 0 0 120px;
+  color: #999;
+}
+.privateAppName{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 110px;
+  display: inline-block;
+  word-wrap: break-word;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.flag_icon{
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+  background: url("../images/icon_step.png");
+  vertical-align: middle;
+}
+.tableBtnGroup{
+  margin: 30px 0 0 0;
+  text-align: right;
+}
+.tableBtnGroup .btn{
+  width: 94px;
+  height: 33px;
+  color: #fff;
+}
+
+.btn.detail,.btn.edit{
+  background: #158ad8;
+}
+.btn.detail:hover,.btn.edit:hover{
+  background: #117ac1;
+}
+.btn.upgrade{
+  background: #14aa72;
+}
+.btn.upgrade:hover{
+  background: #129c69; 
+}
+.btn.delete,.btn.deleteAll{
+  background: #e0238c;
+}
+.btn.delete:hover,.btn.deleteAll:hover{
+  background: #b62168; 
 }
