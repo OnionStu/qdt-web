@@ -162,4 +162,34 @@ button.msg+.righttopNum{
 }
 /*--- end header ---*/
 
-
+.textInput{
+  height: 35px;
+  width: 45%;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.contentTable{
+  margin-top: 10px;
+  width: 100%;
+  table-layout: fixed;
+}
+.tableTitle{
+  width: 24%;
+  height: 40px;
+  background-color: #158ad8;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #158ad8;
+}
+.tableCell{
+  height: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.tableCell.radioOption{
+  width: 10px;
+}
+.tableTitle.radioOption{
+  width: 6%;
+}
