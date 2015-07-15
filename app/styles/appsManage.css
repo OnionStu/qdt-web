@@ -47,27 +47,51 @@
   margin: 30px 0 0 0;
   text-align: right;
 }
-.tableBtnGroup .btn{
-  width: 94px;
-  height: 33px;
+
+.btn.uploadSubmit{
   color: #fff;
+  background: #158ad8; 
 }
 
-.btn.detail,.btn.edit{
+.detailPane{
+  margin: 30px 0 0 0;
+}
+.detialHeader{
+  height: 40px;
+  line-height: 40px;
   background: #158ad8;
+  color: #fff;
+  text-align: center;
 }
-.btn.detail:hover,.btn.edit:hover{
-  background: #117ac1;
+.detialContent{
+  border: 1px solid #ccc;
+  border-top: none;
 }
-.btn.upgrade{
-  background: #14aa72;
+.detialContent table{
+  width: 100%;
+  table-layout: fixed;
 }
-.btn.upgrade:hover{
-  background: #129c69; 
+.detialContent td{
+  width: 33.33%;
+  height: 40px;
+  padding: 0 15px;
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-all;
 }
-.btn.delete,.btn.deleteAll{
-  background: #e0238c;
+.uploadAppForm{
+  margin-top: 30px;
 }
-.btn.delete:hover,.btn.deleteAll:hover{
-  background: #b62168; 
+.uploadAppForm div{
+  text-align: center;
+  padding: 10px 0;
+}
+.uploadAppForm .textInput{
+  width: 60%
+}
+.uploadAppForm select{
+  display: inline-block;
+  width: 60%;
+  margin-left: 10px;
+  border-radius: 0;
 }
