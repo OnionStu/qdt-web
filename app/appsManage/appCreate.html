@@ -71,108 +71,20 @@
       </ul>
     </div>
     <div class="rightPanel">
-      <div class="header">应用查看</div>
+      <div class="header">应用创建</div>
       <div class="content">
-        <div class="flag"><span class="flag_icon"></span>查看</div>
-        <div class="uploadPrivateApp">
-          <label for="exampleInputName2">上传私有应用:</label>
-          <input type="text" class="textInput" id="exampleInputName2">
-          <a href="#" class="fileInputBtn">
-            <span>选择文件</span>
-            <input type="file">
-          </a>
-          <span class="privateAppName">未选择任何文件</span>
-          <p class="uploadTips">上传自己的私有应用，生成二维码，用于下载</p>
-        </div>
-        <div>
-          <div class="tableBtnGroup">
-            <button class="btn detail"><span class="tableBtnIcon"></span>详细</button>
-            <button class="btn edit"><span class="tableBtnIcon"></span>编辑</button>
-            <button class="btn upgrade"><span class="tableBtnIcon"></span>升级</button>
-            <button class="btn delete"><span class="tableBtnIcon"></span>删除</button>
-            <button class="btn deleteAll">删除所有</button>
-          </div>
-          <table class="contentTable table-hover">
-            <tr>
-              <th class="tableTitle radioOption"></th>
-              <th class="tableTitle">应用ID</th>
-              <th class="tableTitle">应用表识</th>
-              <th class="tableTitle">应用名称</th>
-              <th class="tableTitle">创建时间</th>
-            </tr>
-            <tr>
-              <td class="tableCell radioOption"><input type="radio" name="inlineRadioOptions" checked></td>
-              <td class="tableCell">ID</td>
-              <td class="tableCell">123</td>
-              <td class="tableCell">456</td>
-              <td class="tableCell">890</td>
-            </tr>
-            <tr>
-              <td class="tableCell radioOption"><input type="radio" name="inlineRadioOptions"></td>
-              <td class="tableCell">ID</td>
-              <td class="tableCell">123</td>
-              <td class="tableCell">456</td>
-              <td class="tableCell">890</td>
-            </tr>
-            <tr>
-              <td class="tableCell radioOption"><input type="radio" name="inlineRadioOptions"></td>
-              <td class="tableCell">ID</td>
-              <td class="tableCell">123</td>
-              <td class="tableCell">456</td>
-              <td class="tableCell">890</td>
-            </tr>
-            <tr>
-              <td class="tableCell radioOption"><input type="radio" name="inlineRadioOptions"></td>
-              <td class="tableCell">ID</td>
-              <td class="tableCell">123</td>
-              <td class="tableCell">456</td>
-              <td class="tableCell">890</td>
-            </tr>
-          </table>
-          <ul class="pageList">
-            <li>
-              <a href="#">首页</a>
-            </li>
-            <li>
-              <a href="#">上一页</a>
-            </li>
-            <li class="index active"><a href="#">1</a></li>
-            <li class="index"><a href="#">2</a></li>
-            <li class="index"><a href="#">3</a></li>
-            <li class="index"><a href="#">4</a></li>
-            <li>
-              <a href="#">下一页</a>
-            </li>
-            <li>
-              <a href="#">尾页</a>
-            </li>
-          </ul>
-          <div class="detailPane">
-            <div class="detialHeader">查看应用详细</div>
-            <div class="detialContent">
-              <table>
-                <tr>
-                  <td><span>应用ID: </span><span>1111111111111111111</span></td>
-                  <td><span>应用表识: </span><span>1111111111111111111</span></td>
-                  <td><span>应用名称: </span><span>1111111111111111111</span></td>
-                </tr>
-                <tr>
-                  <td><span>应用分类: </span><span>1111111111111111111</span></td>
-                  <td><span>应用渠道: </span><span>1111111111111111111</span></td>
-                  <td><span>应用状态: </span><span>1111111111111111111</span></td>
-                </tr>
-                <tr>
-                  <td><span>版本信息: </span>7</td>
-                  <td><span>二维码: </span>8</td>
-                </tr>
-              </table>
+        <form class="createAppForm">
+          <div>
+            <label for="appLogo" class="toplabel">应用logo: </label>
+            <div class="formRow">
+              <img alt="applogo" class="logoImg pull-left">
+              <div class="logoBtnContainer">
+                <a class="btn logoBtn">选择图片<input type="file" class="logoInput" id="appLogo"></a>
+                <p>支持 png, jpg 格式，不大于2M</p>
+              </div>
+              
             </div>
           </div>
-        </div>
-      </div>
-      <div class="content">
-        <div class="flag"><span class="flag_icon"></span>上传私有应用</div>
-        <form class="uploadAppForm">
           <div>
             <label for="appIdentifier">应用表识: </label>
             <input type="text" class="textInput" id="appIdentifier">
@@ -183,7 +95,13 @@
           </div>
           <div>
             <label for="appClassification">应用分类: </label>
-            <input type="text" class="textInput" id="appClassification">
+            <select class="form-control" id="appClassification">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
           </div>
           <div>
             <label for="appFile">应用文件: </label>
@@ -194,6 +112,12 @@
               <option>4</option>
               <option>5</option>
             </select>
+          </div>
+          <div>
+            <label for="appDesc" class="toplabel">应用描述: </label>
+            <div class="formRow">
+              <textarea name="appDesc" id="appDesc" class="appDesc"></textarea>
+            </div>
           </div>
           <div>
             <button class="btn uploadSubmit">上传应用</button>
