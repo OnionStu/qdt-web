@@ -112,3 +112,50 @@
   margin-top: 10px;
   color: #999;
 }
+.tabGroup{
+  padding: 0;
+  text-align: center;
+}
+.tabGroup li.active{
+  background: #158ad8;
+}
+.tabGroup li.active a{
+  color: #fff;
+}
+.tabGroup li:first-of-type{
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+.tabGroup li:last-of-type{
+  border: 1px solid #ccc;
+  border-radius: 0 4px 4px 0;
+}
+.tabGroup li{
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  line-height: 35px;
+  background: #eee;
+}
+.tabGroup li a{
+  display: block;
+  width: 130px;
+  height: 35px;
+  color: #000;
+  text-decoration: none !important;
+}
+.rightLabel{
+  width: 110px;
+  text-align: right;
+}
+.pluginType .tab-content,.modulesSection .contentTable{
+  margin-top: 50px;
+}
+
+.commitContainer .alignCenter{
+  margin: 20px 0 0 0;
+}
+.commitContainer .btn{
+  background: #158ad8;
+  color: #fff;
+}

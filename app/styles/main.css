@@ -15,6 +15,26 @@ body{
   background: #158ad8;
   color: #fff;
 }
+.alignCenter{
+  text-align: center;
+}
+.processAnchor {
+  display: inline-block;
+  background-color: #fff;
+  height: 38px;
+  margin: 0;
+  line-height: 40px;
+  padding: 0;
+  margin: 0 0 0 20px;
+  vertical-align: top;
+}
+.processAnchor li{
+  float: left;
+  list-style: none;
+}
+.processAnchor li a{
+  color: #000;
+}
 /*--- header ---*/
 .topHeader{
   height: 107px;
@@ -22,7 +42,7 @@ body{
   background: #158ad8;
   color: #fff;
 }
-.topHeader .search{
+.search{
   width: 184px;
   height: 29px;
   padding-right: 26px;
@@ -31,7 +51,7 @@ body{
 .firstGroup{
   margin: 20px 0 0 0;
 }
-.topHeader .searchGroup
+.searchGroup
 ,.topHeader .userBtnGroup
 ,.topHeader .userInfoGroup{
   position: relative;
@@ -97,15 +117,15 @@ body{
   width: 34px;
   height: 34px;
 }
-.topHeader button{
+button{
   border: 0;
   background: none;
 }
-.topHeader .searchGroup .searchCommit{
+.searchGroup .searchCommit{
   position: absolute;
   border-radius: 4px;
   height: 27px;
-  right: 0;
+  right: 1px;
   background-color: #fff;
   color: #999;
 }
