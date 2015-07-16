@@ -75,12 +75,18 @@
       <div class="header">插件列表</div>
       <div class="content">
         <div class="main">
-          <div class="tableBtnGroup">
-            <button class="btn add">添加插件</button>
-            <button class="btn detail">详细</button>
-            <button class="btn edit">编辑</button>
-            <button class="btn delete">删除</button>
-            <button class="btn deleteAll">删除所有</button>
+          <div class="actionGroup clearfix">
+            <div class="searchGroup pluginSearch pull-left">
+              <input type="text" class="search form-control" placeholder="输入插件名">
+              <button class="searchCommit glyphicon glyphicon-search"></button>
+            </div>
+            <div class="tableBtnGroup pull-right">
+              <button class="btn add"><span class="tableBtnIcon"></span>添加插件</button>
+              <button class="btn detail"><span class="tableBtnIcon"></span>详细</button>
+              <button class="btn edit"><span class="tableBtnIcon"></span>编辑</button>
+              <button class="btn delete"><span class="tableBtnIcon"></span>删除</button>
+              <button class="btn deleteAll">删除当页所有</button>
+            </div>
           </div>
           <table class="contentTable table-hover">
             <tr>
@@ -119,6 +125,45 @@
               <td class="tableCell">890</td>
             </tr>
           </table>
+          <ul class="pageList">
+            <li>
+              <a href="#">首页</a>
+            </li>
+            <li>
+              <a href="#">上一页</a>
+            </li>
+            <li class="index active"><a href="#">1</a></li>
+            <li class="index"><a href="#">2</a></li>
+            <li class="index"><a href="#">3</a></li>
+            <li class="index"><a href="#">4</a></li>
+            <li>
+              <a href="#">下一页</a>
+            </li>
+            <li>
+              <a href="#">尾页</a>
+            </li>
+          </ul>
+          <div class="detailPane">
+            <div class="detialHeader">查看插件详细</div>
+            <div class="detialContent">
+              <table>
+                <tr>
+                  <td><span>插件标识: </span><span>1111111111111111111</span></td>
+                  <td><span>插件名称: </span><span>1111111111111111111</span></td>
+                  <td><span>插件分类: </span><span>1111111111111111111</span></td>
+                </tr>
+                <tr>
+                  <td><span>插件描述: </span><span>1111111111111111111</span></td>
+                  <td><span>插件版本: </span><span>1111111111111111111</span></td>
+                  <td><span>系统类型: </span><span>1111111111111111111</span></td>
+                </tr>
+                <tr>
+                  <td><span>插件渠道: </span>7</td>
+                  <td><span>发布时间: </span>8</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </div>

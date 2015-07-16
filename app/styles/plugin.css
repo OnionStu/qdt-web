@@ -6,34 +6,42 @@
 }
 .main{
   width: 90%;
-margin: 0 auto;
+  margin: 0 auto;
 }
 
 .tableBtnGroup{
-  /*margin: 30px 0 0 0;*/
   text-align: right;
 }
 .tableBtnGroup .btn{
-  width: 94px;
-  height: 33px;
-  color: #fff;
+  /*width: 105px;*/
 }
 
-.btn.detail,.btn.edit{
-  background: #158ad8;
+.pluginSearch{
+  position: relative;
+  display: inline-block;
+  height: 29px;
+  /*width: 184px;*/
+  min-width: 160px;
+  max-width: 184px;
+  width: 25%;
+  vertical-align: middle;
 }
-.btn.detail:hover,.btn.edit:hover{
-  background: #117ac1;
+.pluginSearch input{
+  height: 100%;
 }
-.btn.add{
-  background: #14aa72;
+.pluginSearch .searchCommit{
+  position: absolute;
+  border-radius: 4px;
+  height: 27px;
+  right: 0;
+  background-color: #FFF;
+  color: #999;
+  border: 0;
+  background: none;
 }
-.btn.add:hover{
-  background: #129c69;
+.btn.deleteAll{
+  padding:6px 5px;
 }
-.btn.delete,.btn.deleteAll{
-  background: #e0238c;
-}
-.btn.delete:hover,.btn.deleteAll:hover{
-  background: #b62168;
+.add>.tableBtnIcon{
+  margin-right: 2px;
 }
