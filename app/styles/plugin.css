@@ -48,3 +48,9 @@
 .add>.tableBtnIcon{
   margin-right: 2px;
 }
+.pluginDetail table span{
+  display: table-cell;
+}
+.pluginDetail table td>span:first-child{
+  min-width: 65px;
+}
