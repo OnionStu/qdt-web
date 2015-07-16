@@ -55,7 +55,7 @@
   min-width: 65px;
 }
 
-.addPluginForm .btn{
+[class$="Form"] .btn{
   color: #FFF;
   background: #158AD8;
   width: 120px;
