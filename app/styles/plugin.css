@@ -54,3 +54,10 @@
 .pluginDetail table td>span:first-child{
   min-width: 65px;
 }
+
+.addPluginForm .btn{
+  color: #FFF;
+  background: #158AD8;
+  width: 120px;
+  position: relative;
+}
