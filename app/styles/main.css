@@ -1,5 +1,11 @@
+html{
+  position:relative;
+  height: auto;
+  min-height:100%;
+}
 body{
   background: #f8f8f8;
+  padding-bottom: 40px; 
 }
 .container{
   min-width: 970px;
@@ -8,6 +14,10 @@ body{
   margin-top: 30px;
 }
 .footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   font-size: 12px;
   height: 30px;
   line-height: 30px;

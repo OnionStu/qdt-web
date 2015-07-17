@@ -56,7 +56,7 @@
         <div class="secondGroup">
           <a href="../appsManage/appsView.html" class="btn manageNav">应用管理</a>
           <a href="../build/build.html" class="btn manageNav">构建管理</a>
-          <a href="#" class="btn manageNav">插件管理</a>
+          <a href="../plugins/pluginList.html" class="btn manageNav">插件管理</a>
           <a href="#" class="btn manageNav active">模块管理</a>
         </div>
       </section>
@@ -66,66 +66,63 @@
     <div class="leftNav pull-left">
       <div class="header"><span class="leftNavHeaderIcon"></span>模块管理</div>
       <ul>
-        <li class="active"><a href="#">模块列表</a></li>
-        <li><a href="modulesList.html">模块新增</a></li>
-        <li><a href="#">模块修改</a></li>
+        <li><a href="modulesList.html">模块列表</a></li>
+        <li class="active"><a href="#">模块新增</a></li>
+        <li><a href="modulesModify.html">模块修改</a></li>
       </ul>
     </div>
     <div class="rightPanel">
-      <div class="header">应用创建</div>
+      <div class="header">模块新增</div>
       <div class="content">
-        <form class="createAppForm">
+        <form class="addPluginForm">
           <div>
-            <label for="appLogo" class="toplabel">应用logo: </label>
-            <div class="formRow">
-              <img alt="applogo" class="logoImg pull-left">
-              <div class="logoBtnContainer">
-                <a class="btn logoBtn">选择图片<input type="file" class="logoInput" id="appLogo"></a>
-                <p>支持 png, jpg 格式，不大于2M</p>
-              </div>
-              
-            </div>
+            <label for="moduleIdentifier">模块标识</label>
+            <input type="text" class="textInput form-control" id="moduleIdentifier">
           </div>
           <div>
-            <label for="appIdentifier">应用表识: </label>
-            <input type="text" class="textInput" id="appIdentifier">
+            <label for="moduleName">模块名称</label>
+            <input type="text" class="textInput form-control" id="moduleName">
           </div>
           <div>
-            <label for="appName">应用名称: </label>
-            <input type="text" class="textInput" id="appName">
-          </div>
-          <div>
-            <label for="appClassification">应用分类: </label>
-            <select class="form-control" id="appClassification">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+            <label for="moduleType">模块分类</label>
+            <select class="form-control" id="moduleType">
+              <option>IOS</option>
+              <option>Android</option>
             </select>
           </div>
           <div>
-            <label for="appFile">应用文件: </label>
-            <select class="form-control" id="appFile">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+            <label for="moduleVersion">模块版本</label>
+            <input type="text" class="textInput form-control" id="moduleVersion">
+          </div>
+          <div>
+            <label for="moduleStatus">模块状态</label>
+            <select class="form-control" id="moduleStatus">
+              <option>IOS</option>
+              <option>Android</option>
             </select>
           </div>
           <div>
-            <label for="appDesc" class="toplabel">应用描述: </label>
-            <div class="formRow">
-              <textarea name="appDesc" id="appDesc" class="appDesc"></textarea>
-            </div>
+            <label for="pluginDesc">模块描述</label>
+            <textarea type="text" class="textInput form-control" id="pluginDesc"></textarea>
           </div>
           <div>
-            <button class="btn uploadSubmit">创建应用</button>
+            <label for="pluginFile">模块文件</label>
+            <span class="uploadFileInput textInput">
+              <span></span>
+              <a class="fileInputBtn">
+                <span>选择文件</span>
+                <input type="file" id="pluginFile">
+              </a>
+            </span>
+          </div>
+          <div>
+            <button class="btn submit">提交</button>
+            <button class="btn reset">重置</button>
           </div>
         </form>
       </div>
     </div>
+  </div>
   </div>
   <footer class="footer">
     COPYRIGHT ® ALL RIGHTS RESERVED 变色龙开发团队
