@@ -7,7 +7,8 @@
   <title>变色龙QDT</title>
   <link rel="stylesheet" href="../lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/appsManage.css">
+  <link rel="stylesheet" href="../styles/plugin.css">
+  <link rel="stylesheet" href="../styles/modules.css">
   <!--[if lt IE 9]>
     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -47,27 +48,27 @@
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                 <li><a href="#"><span class="dropMenuIcon info"></span>个人信息</a></li>
                 <li><a href="#"><span class="dropMenuIcon settings"></span>系统设置</a></li>
-                <li><a href="../login/login.html"><span class="dropMenuIcon logout"></span>退出</a></li>
+                <li><a href="./login/login.html"><span class="dropMenuIcon logout"></span>退出</a></li>
               </ul>
             </div>
           </div>
         </div>
         <div class="secondGroup">
-          <a href="#" class="btn manageNav active">应用管理</a>
+          <a href="../appsManage/appsView.html" class="btn manageNav">应用管理</a>
           <a href="../build/build.html" class="btn manageNav">构建管理</a>
-          <a href="../plugins/pluginList.html" class="btn manageNav">插件管理</a>
-          <a href="#" class="btn manageNav">模块管理</a>
+          <a href="#" class="btn manageNav">插件管理</a>
+          <a href="#" class="btn manageNav active">模块管理</a>
         </div>
       </section>
     </div>
   </header>
-  <div class="appsManage container">
+  <div class="container">
     <div class="leftNav pull-left">
-      <div class="header"><span class="leftNavHeaderIcon"></span>应用管理</div>
+      <div class="header"><span class="leftNavHeaderIcon"></span>模块管理</div>
       <ul>
-        <li><a href="./appsView.html">应用查看</a></li>
-        <li class="active"><a href="#">应用创建</a></li>
-        <li><a href="./appEdit.html">应用编辑</a></li>
+        <li class="active"><a href="#">模块列表</a></li>
+        <li><a href="modulesList.html">模块新增</a></li>
+        <li><a href="#">模块修改</a></li>
       </ul>
     </div>
     <div class="rightPanel">
@@ -124,8 +125,6 @@
           </div>
         </form>
       </div>
-    </div>
-    
     </div>
   </div>
   <footer class="footer">
