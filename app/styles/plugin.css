@@ -28,6 +28,7 @@
 }
 .pluginSearch input{
   height: 100%;
+  width: 100%;
 }
 .pluginSearch .searchCommit{
   position: absolute;
@@ -38,10 +39,25 @@
   color: #999;
   border: 0;
   background: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .btn.deleteAll{
   padding:6px 5px;
 }
 .add>.tableBtnIcon{
   margin-right: 2px;
+}
+.pluginDetail table span{
+  display: table-cell;
+}
+.pluginDetail table td>span:first-child{
+  min-width: 65px;
+}
+
+[class$="Form"] .btn{
+  color: #FFF;
+  background: #158AD8;
+  width: 120px;
+  position: relative;
 }

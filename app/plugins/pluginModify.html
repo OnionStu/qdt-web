@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +7,13 @@
   <title>变色龙QDT</title>
   <link rel="stylesheet" href="../lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../styles/main.css">
-  <!-- <link rel="stylesheet" href="../styles/appsManage.css"> -->
-  <link rel="stylesheet" href="../styles/build.css">
+  <link rel="stylesheet" href="../styles/plugin.css">
   <!--[if lt IE 9]>
     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-</head>
-
-<body id="buildManage">
+  </head>
+<body id="pluginList">
   <header class="topHeader">
     <div class="container">
       <img class="logo pull-left" src="../images/header_logo.png" alt="chameleon-logo">
@@ -56,9 +53,9 @@
           </div>
         </div>
         <div class="secondGroup">
-          <a href="../appsManage/appCreate.html" class="btn manageNav">应用管理</a>
-          <a href="#" class="btn manageNav active">构建管理</a>
-          <a href="../plugins/pluginList.html" class="btn manageNav">插件管理</a>
+          <a href="/#" class="btn manageNav">应用管理</a>
+          <a href="../build/build.html" class="btn manageNav">构建管理</a>
+          <a href="#" class="btn manageNav active">插件管理</a>
           <a href="#" class="btn manageNav">模块管理</a>
         </div>
       </section>
@@ -66,35 +63,60 @@
   </header>
   <div class="container">
     <div class="leftNav pull-left">
-      <div class="header"><span class="leftNavHeaderIcon"></span>构建管理</div>
+      <div class="header"><span class="leftNavHeaderIcon"></span>插件管理</div>
+      <ul>
+        <li class=""><a href="./pluginList.html">插件列表</a></li>
+        <li class=""><a href="./pluginAdd.html">插件新增</a></li>
+        <li><a href="./pluginDetail.html">插件详情</a></li>
+        <li class="active"><a href="#">插件修改</a></li>
+      </ul>
     </div>
     <div class="rightPanel">
-      <div class="header">构建管理</div>
+      <div class="header">插件修改</div>
       <div class="content">
-        <table class="contentTable table-hover">
-          <tr>
-            <th class="tableTitle">构建序号</th>
-            <th class="tableTitle">应用ID</th>
-            <th class="tableTitle">应用名称</th>
-            <th class="tableTitle">构建状态</th>
-            <th class="tableTitle log">构建日志</th>
-            <th class="tableTitle">构建时间</th>
-            <th class="tableTitle">更新时间</th>
-          </tr>
-          <tr>
-            <td class="tableCell">1</td>
-            <td class="tableCell">1111111111</td>
-            <td class="tableCell">家具</td>
-            <td class="tableCell">排队ing</td>
-            <td class="tableCell">
-              <div class="btn btn-log">IOS</div>
-              <div class="btn btn-log">Android</div>
-            </td>
-            <td class="tableCell">2015-07-15 15:54:46</td>
-            <td class="tableCell">2015-07-15 15:54:53</td>
-          </tr>
-        </table>
-        <span>说明：构建状态包括初始化、排队中、已成功、已失败。</span>
+        <form class="modPluginForm">
+          <div>
+            <label for="pluginIdentifier">插件标识</label>
+            <input type="text" class="textInput form-control" id="pluginIdentifier">
+          </div>
+          <div>
+            <label for="pluginName">插件名称</label>
+            <input type="text" class="textInput form-control" id="pluginName">
+          </div>
+          <div>
+            <label for="pluginlassification">插件分类</label>
+            <input type="text" class="textInput form-control" id="pluginlassification">
+          </div>
+          <div>
+            <label for="systemType">系统类型</label>
+            <select class="form-control" id="systemType">
+              <option>IOS</option>
+              <option>Android</option>
+            </select>
+          </div>
+          <div>
+            <label for="pluginVersion">插件版本</label>
+            <input type="text" class="textInput form-control" id="pluginVersion">
+          </div>
+          <div>
+            <label for="pluginDesc">插件描述</label>
+            <textarea type="text" class="textInput form-control" id="pluginDesc"></textarea>
+          </div>
+          <div>
+            <label for="pluginFile">插件文件</label>
+            <span class="uploadFileInput textInput">
+              <span></span>
+              <a class="fileInputBtn">
+                <span>选择文件</span>
+                <input type="file" id="pluginFile">
+              </a>
+            </span>
+          </div>
+          <div>
+            <button class="btn submit">提交</button>
+            <button class="btn reset">重置</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -104,5 +126,4 @@
   <script src="../lib/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="../lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
-
 </html>
