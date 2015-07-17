@@ -28,7 +28,8 @@
   left: 0;
   width: 100px;
   height: 35px;
-  opacity: 0; 
+  opacity: 0;
+  filter:alpha(opacity=0);  
 }
 .uploadTips{
   margin: 10px 0 0 120px;
@@ -78,6 +79,7 @@
   top: 0;
   left: 0;
   opacity: 0;
+  filter:alpha(opacity=0); 
   width: 120px;
   height: 34px;
 }
