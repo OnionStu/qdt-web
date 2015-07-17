@@ -45,6 +45,56 @@ body{
 .processAnchor li a{
   color: #000;
 }
+.mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.4);
+  z-index: 99;
+}
+.mask .modalContainer{
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: -225px;
+  background: #fff;
+  border-radius: 4px;
+}
+.modalContainer .modalTitle{
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: #158ad8;
+  color: #fff;
+  border-radius: 4px 4px 0 0;
+  padding: 0 20px;
+}
+.modalContainer .modalTitle .glyphicon-remove{
+  float: right;
+  position: relative;
+  width: 20px;
+  height: 38px;
+  line-height: 38px;
+  cursor: pointer; 
+}
+.modalContainer .modalContent{
+  padding: 10px 20px;
+}
+.modalFooter{
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+.modalFooter .btn{
+  background: #158ad8;
+  color: #fff;
+  width: 100px;
+}
 /*--- header ---*/
 .topHeader{
   height: 107px;
