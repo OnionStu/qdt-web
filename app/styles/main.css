@@ -258,7 +258,7 @@ button.msg+.righttopNum{
   table-layout: fixed;
 }
 .tableTitle{
-  width: 24%;
+  width: auto;
   height: 40px;
   background-color: #158ad8;
   color: #fff;
