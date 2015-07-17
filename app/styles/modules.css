@@ -1,0 +1,11 @@
+.modulesdetail{
+	border: none;
+  width: 80%;
+  margin: 0 auto;
+}
+.leftNavHeaderIcon {
+  background: url('../images/icon_module.png');
+}
+.rightPanel .content{
+	padding: 15px;
+}
