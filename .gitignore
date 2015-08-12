@@ -4,3 +4,4 @@ startApp.bat
 .DS_Store
 npm-debug.log
 app/lib/bower_components/
+QDT-web.zip
