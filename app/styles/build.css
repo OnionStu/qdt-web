@@ -32,3 +32,55 @@ table+span{
   font-size: 12px;
   color: rgb( 68, 68, 68 );
 }
+.tableCell>a{
+  text-decoration: underline;
+}
+.logoBox{
+  margin: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 160px;
+  height: 160px;
+  background: #eee;
+  border: 1px solid #CCC;
+}
+.appLogo{
+  width: 100%;
+}
+#buildManage dl {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+}
+#buildManage dd,dt{
+  font-weight: normal;
+}
+#buildManage .dl-horizontal dt {
+  float: left;
+  width: 100px;
+  clear: left;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#buildManage .dl-horizontal dd {
+    margin-left: 100px;
+    margin-bottom: 15px;
+}
+#buildManage .dl-horizontal dd>p{
+  width: 360px;
+  height: 150px; 
+  border: 1px solid #CCC;
+  padding: 3px;
+}
+#buildManage .dl-horizontal dd>a{
+   margin-left: 150px;
+   text-decoration: underline;
+ }
+ .btn.back{
+  color: #FFF;
+  background: #158AD8!important;
+  width: 120px;
+  position: relative;
+  border: none;
+ }

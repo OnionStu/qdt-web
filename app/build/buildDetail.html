@@ -19,13 +19,14 @@
     <![endif]-->
     <script src="../assets/js/ace-extra.min.js"></script>
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/user.css">
+    <!-- <link rel="stylesheet" href="../styles/appsManage.css"> -->
+    <link rel="stylesheet" href="../styles/build.css">
     <!--[if lt IE 9]>
     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body id="buildManage">
     <header class="topHeader">
       <div class="container">
         <img class="logo pull-left" src="../images/header_logo.png" alt="chameleon-logo">
@@ -57,9 +58,9 @@
                 <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                  <li><a href="#"><span class="dropMenuIcon info"></span>个人信息</a></li>
+                  <li><a href="../user/userInfo.html"><span class="dropMenuIcon info"></span>个人信息</a></li>
                   <li><a href="#"><span class="dropMenuIcon settings"></span>系统设置</a></li>
-                  <li><a href="../login/login.html"><span class="dropMenuIcon logout"></span>退出</a></li>
+                  <li><a href="./login/login.html"><span class="dropMenuIcon logout"></span>退出</a></li>
                 </ul>
               </div>
             </div>
@@ -68,67 +69,68 @@
             <a href="../appsManage/appsView.html" class="btn manageNav btn-round">应用管理</a>
             <a href="../modules/modulesList.html" class="btn manageNav btn-round">模块管理</a>
             <a href="../plugins/pluginList.html" class="btn manageNav btn-round">插件管理</a>
-            <a href="../build/buildLog.html" class="btn manageNav btn-round">构建日志</a>
+            <a href="../build/buildLog.html" class="btn manageNav active btn-round">构建日志</a>
           </div>
         </section>
       </div>
     </header>
-    <div class="userInfo container">
-      <!--       <div class="leftNav pull-left">
-        <div class="header"><span class="leftNavHeaderIcon"></span>个人信息</div>
-        <ul>
-          <li><a href="./userInfo.html">基本信息</a></li>
-          <li class="active"><a href="./changePassword.html">修改密码</a></li>
-        </ul>
-      </div> -->
+    <div class="container">
+      <!--
+      <div class="leftNav pull-left">
+        <div class="header"><span class="leftNavHeaderIcon"></span>构建管理</div>
+      </div>
+      -->
       <div class="rightPanel">
-        <div class="header">修改密码</div>
+        <div class="header">构建详情</div>
         <div class="content">
-          <form class="userInfoForm">
-            <div>
-              <label for="opwd">旧密码</label>
-              <input type="password" class="textInput form-control" id="opwd">
+          <div class="col-sm-4 text-center">
+            <div class="logoBox">
+              <img src="../images/icon.png" class="appLogo">
             </div>
-            <div>
-              <label for="npwd">新密码</label>
-              <input type="password" class="textInput form-control" id="npwd">
-            </div>
-            <div>
-              <label for="cnpwd">确认密码</label>
-              <input type="password" class="textInput form-control" id="cnpwd">
-            </div>
-            <div>
-              <button class="btn save btn-round">保存</button>
-              <button class="btn reset btn-round">重置</button>
-              <button class="btn back btn-round" onclick="history.back()">返回</button>
-            </div>
-          </form>
+          </div>
+          <div class="col-sm-8">
+            <dl class="dl-horizontal">
+              <dt>构建ID：</dt><dd>4</dd>
+              <dt>构建应用：</dt><dd>uber</dd>
+              <dt>构建号：</dt><dd>19</dd>
+              <dt>构建版本：</dt><dd>iOS 1.0.1</dd>
+              <dt>构建时间：</dt><dd>2015-08-12 17:00:53</dd>
+              <dt>更新时间：</dt><dd>2015-08-12 17:01:06</dd>
+              <dt>构建日志：</dt>
+              <dd>
+                <p>修复Bug</p>
+                <a href="">打包下载</a>
+              </dd>
+            </dl>
+          </div>
+          <div class="col-sm-12 text-center">
+            <button class="btn btn-round back">返回</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <footer class="footer">
-    COPYRIGHT ® ALL RIGHTS RESERVED 变色龙开发团队
-  </footer>
-  <!--[if !IE]> -->
-  <script type="text/javascript">
-  window.jQuery || document.write("<script src='../assets/js/jquery.min.js'>"+"<"+"/script>");
-  </script>
-  <!-- <![endif]-->
-  <!--[if IE]>
-  <script type="text/javascript">
-  window.jQuery || document.write("<script src='../assets/js/jquery1x.min.js'>"+"<"+"/script>");
-  </script>
-  <![endif]-->
-  <script type="text/javascript">
-  if('ontouchstart' in document.documentElement) document.write("<script src='../assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
-  </script>
-  <script src="../assets/js/bootstrap.min.js"></script>
-  <script src="../assets/js/ace-elements.min.js"></script>
-  <script src="../assets/js/ace.min.js"></script>
-  <link rel="stylesheet" href="../assets/css/ace.onpage-help.css" />
-  <script type="text/javascript"> ace.vars['base'] = '..'; </script>
-  <script src="../assets/js/ace/elements.onpage-help.js"></script>
-  <script src="../assets/js/ace/ace.onpage-help.js"></script>
-</body>
+    <footer class="footer">
+      COPYRIGHT ® ALL RIGHTS RESERVED 变色龙开发团队
+    </footer>
+    <!--[if !IE]> -->
+    <script type="text/javascript">
+    window.jQuery || document.write("<script src='../assets/js/jquery.min.js'>"+"<"+"/script>");
+    </script>
+    <!-- <![endif]-->
+    <!--[if IE]>
+    <script type="text/javascript">
+    window.jQuery || document.write("<script src='../assets/js/jquery1x.min.js'>"+"<"+"/script>");
+    </script>
+    <![endif]-->
+    <script type="text/javascript">
+    if('ontouchstart' in document.documentElement) document.write("<script src='../assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+    </script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/ace-elements.min.js"></script>
+    <script src="../assets/js/ace.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/ace.onpage-help.css" />
+    <script type="text/javascript"> ace.vars['base'] = '..'; </script>
+    <script src="../assets/js/ace/elements.onpage-help.js"></script>
+    <script src="../assets/js/ace/ace.onpage-help.js"></script>
+  </body>
 </html>

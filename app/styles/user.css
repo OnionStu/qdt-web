@@ -3,9 +3,13 @@
 }
 [class$="Form"] .btn{
   color: #FFF;
-  background: #158AD8;
+  background: #158AD8!important;
   width: 120px;
   position: relative;
+  border: none;
+}
+[class$="Form"] .btn:focus,[class$="Form"] .btn:active,[class$="Form"] .btn:hover{
+  outline: none;
 }
 .logoBtnContainer p{
   margin-top: 10px;
@@ -13,6 +17,10 @@
 }
 .btn.logoBtn{
   margin-left: 20px;
+}
+
+.btn.change-pwd,.btn.back{
+  background: #e0238c!important;
 }
 [class$="Form"] .logoBtnContainer{
   text-align: left;

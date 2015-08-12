@@ -66,42 +66,76 @@
             </div>
           </div>
           <div class="secondGroup">
-            <a href="../appsManage/appsView.html" class="btn manageNav">应用管理</a>
-            <a href="#" class="btn manageNav active">构建管理</a>
-            <a href="../plugins/pluginList.html" class="btn manageNav">插件管理</a>
-            <a href="../modules/modulesList.html" class="btn manageNav">模块管理</a>
+            <a href="../appsManage/appsView.html" class="btn manageNav btn-round">应用管理</a>
+            <a href="../modules/modulesList.html" class="btn manageNav btn-round">模块管理</a>
+            <a href="../plugins/pluginList.html" class="btn manageNav btn-round">插件管理</a>
+            <a href="../build/buildLog.html" class="btn manageNav active btn-round">构建日志</a>
           </div>
         </section>
       </div>
     </header>
     <div class="container">
+      <!--
       <div class="leftNav pull-left">
         <div class="header"><span class="leftNavHeaderIcon"></span>构建管理</div>
       </div>
+      -->
       <div class="rightPanel">
-        <div class="header">构建管理</div>
+        <div class="header">构建日志</div>
         <div class="content">
           <table class="contentTable table-hover">
-            <tr>
-              <th class="tableTitle">构建序号</th>
-              <th class="tableTitle">应用ID</th>
-              <th class="tableTitle">应用名称</th>
-              <th class="tableTitle">构建状态</th>
-              <th class="tableTitle log">构建日志</th>
+            <tr class="table-title">
+              <th class="tableTitle">构建ID</th>
+              <th class="tableTitle">构建应用</th>
+              <th class="tableTitle">构建号</th>
+              <th class="tableTitle">构建版本</th>
               <th class="tableTitle">构建时间</th>
               <th class="tableTitle">更新时间</th>
+              <th class="tableTitle">状态</th>
             </tr>
             <tr>
-              <td class="tableCell">1</td>
-              <td class="tableCell">1111111111</td>
-              <td class="tableCell">家具</td>
-              <td class="tableCell">排队ing</td>
               <td class="tableCell">
-                <div class="btn btn-log">IOS</div>
-                <div class="btn btn-log">Android</div>
+                <a href="./buildDetail.html">1</a>
               </td>
+              <td class="tableCell">uber</td>
+              <td class="tableCell">20</td>
+              <td class="tableCell">iOS 1.0.1</td>
               <td class="tableCell">2015-07-15 15:54:46</td>
               <td class="tableCell">2015-07-15 15:54:53</td>
+              <td class="tableCell">已成功</td>
+            </tr>
+            <tr>
+              <td class="tableCell">
+                <a href="./buildDetail.html">2</a>
+              </td>
+              <td class="tableCell">uber</td>
+              <td class="tableCell">20</td>
+              <td class="tableCell">iOS 1.0.1</td>
+              <td class="tableCell">2015-07-15 15:54:46</td>
+              <td class="tableCell">2015-07-15 15:54:53</td>
+              <td class="tableCell">已成功</td>
+            </tr>
+            <tr>
+              <td class="tableCell">
+                <a href="./buildDetail.html">3</a>
+              </td>
+              <td class="tableCell">uber</td>
+              <td class="tableCell">20</td>
+              <td class="tableCell">iOS 1.0.1</td>
+              <td class="tableCell">2015-07-15 15:54:46</td>
+              <td class="tableCell">2015-07-15 15:54:53</td>
+              <td class="tableCell">已成功</td>
+            </tr>
+            <tr>
+              <td class="tableCell">
+                <a href="./buildDetail.html">4</a>
+              </td>
+              <td class="tableCell">uber</td>
+              <td class="tableCell">20</td>
+              <td class="tableCell">iOS 1.0.1</td>
+              <td class="tableCell">2015-07-15 15:54:46</td>
+              <td class="tableCell">2015-07-15 15:54:53</td>
+              <td class="tableCell">已成功</td>
             </tr>
           </table>
           <span>说明：构建状态包括初始化、排队中、已成功、已失败。</span>
