@@ -1,5 +1,5 @@
 .modulesdetail{
-	border: none;
+  border: none;
   width: 80%;
   margin: 0 auto;
 }
@@ -7,5 +7,29 @@
   background: url('../images/icon_module.png');
 }
 .rightPanel .content{
-	padding: 15px;
+  padding: 15px;
+}
+.btn.upload{
+  border: none;
+}
+.btn.logoBtn{
+  margin-left: 20px;
+}
+[class$="Form"] .btn{
+  width: 120px;
+  position: relative;
+  border: none;
+  overflow: hidden;
+}
+.btn.save,.btn.logoBtn{
+  color: #FFF;
+  background: #158AD8!important;
+}
+.btn.back{
+  color: #fff;
+  background: #e0238c!important;
+}
+.logoImg{
+  border-radius: 8px;
+  border:1px solid #ccc;
 }

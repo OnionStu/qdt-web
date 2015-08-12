@@ -19,7 +19,6 @@
     <![endif]-->
     <script src="../assets/js/ace-extra.min.js"></script>
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/plugin.css">
     <link rel="stylesheet" href="../styles/modules.css">
     <!--[if lt IE 9]>
     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -58,149 +57,105 @@
                 <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                  <li><a href="#"><span class="dropMenuIcon info"></span>个人信息</a></li>
+                  <li><a href="../user/userInfo.html"><span class="dropMenuIcon info"></span>个人信息</a></li>
                   <li><a href="#"><span class="dropMenuIcon settings"></span>系统设置</a></li>
-                  <li><a href="./login/login.html"><span class="dropMenuIcon logout"></span>退出</a></li>
+                  <li><a href="../login/login.html"><span class="dropMenuIcon logout"></span>退出</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="secondGroup">
-            <a href="../appsManage/appsView.html" class="btn manageNav">应用管理</a>
-            <a href="../build/build.html" class="btn manageNav">构建管理</a>
-            <a href="../plugins/pluginList.html" class="btn manageNav">插件管理</a>
-            <a href="#" class="btn manageNav active">模块管理</a>
+            <a href="../appsManage/appsView.html" class="btn manageNav btn-round">应用管理</a>
+            <a href="../modules/modulesList.html" class="btn manageNav active btn-round">模块管理</a>
+            <a href="../plugins/pluginList.html" class="btn manageNav btn-round">插件管理</a>
+            <a href="../build/buildLog.html" class="btn manageNav btn-round">构建日志</a>
           </div>
         </section>
       </div>
     </header>
     <div class="container">
-      <div class="leftNav pull-left">
-        <div class="header"><span class="leftNavHeaderIcon"></span>模块管理</div>
-        <ul>
-          <li class="active"><a href="#">模块列表</a></li>
-          <li><a href="modulesCreate.html">模块新增</a></li>
-          <li><a href="modulesModify.html">模块修改</a></li>
-        </ul>
-      </div>
       <div class="rightPanel">
         <div class="header">模块列表</div>
         <div class="content">
-          <div class="main">
-            <div class="actionGroup clearfix">
-              <div class="searchGroup pluginSearch pull-left">
-                <input type="text" class="search form-control" placeholder="输入模块名">
-                <button class="searchCommit glyphicon glyphicon-search"></button>
-              </div>
-              <div class="tableBtnGroup pull-right">
-                <button class="btn edit"><span class="tableBtnIcon"></span>修改</button>
-                <button class="btn delete"><span class="tableBtnIcon"></span>删除</button>
-                <button class="btn deleteAll">删除当页所有</button>
-              </div>
-            </div>
-            <table class="contentTable table-hover">
-              <tr>
-                <th class="tableTitle radioOption"></th>
-                <th class="tableTitle">模块标识</th>
-                <th class="tableTitle">模块名称</th>
-                <th class="tableTitle">模块分类</th>
-                <th class="tableTitle">模块描述</th>
-                <th class="tableTitle">发布时间</th>
-              </tr>
-              <tr>
-                <td class="tableCell radioOption"><input type="radio" name="inlineRadioOptions" checked></td>
-                <td class="tableCell">ID</td>
-                <td class="tableCell">123</td>
-                <td class="tableCell">456</td>
-                <td class="tableCell">890</td>
-                <td class="tableCell">890</td>
-              </tr>
-              <tr>
-                <td class="tableCell radioOption"><input type="radio" name="inlineRadioOptions"></td>
-                <td class="tableCell">ID</td>
-                <td class="tableCell">123</td>
-                <td class="tableCell">456</td>
-                <td class="tableCell">890</td>
-                <td class="tableCell">890</td>
-              </tr>
-              <tr>
-                <td class="tableCell radioOption"><input type="radio" name="inlineRadioOptions"></td>
-                <td class="tableCell">ID</td>
-                <td class="tableCell">123</td>
-                <td class="tableCell">456</td>
-                <td class="tableCell">890</td>
-                <td class="tableCell">890</td>
-              </tr>
-              <tr>
-                <td class="tableCell radioOption"><input type="radio" name="inlineRadioOptions"></td>
-                <td class="tableCell">ID</td>
-                <td class="tableCell">123</td>
-                <td class="tableCell">456</td>
-                <td class="tableCell">890</td>
-                <td class="tableCell">890</td>
-              </tr>
-            </table>
-            <ul class="pageList">
+          <button class="btn pull-right btn-round upload">上传模块</button>
+          <div class="gridList">
+            <ul>
               <li>
-                <a href="#">首页</a>
+                <a class="gridItem" href="#">
+                  <img class="logo" src="http://7xifa4.com1.z0.glb.clouddn.com/logo.png" alt="logo">
+                  <p><span>模块名称: </span>模块1</p>
+                  <p><span>模块标识: </span>com.foreveross.model</p>
+                </a>
               </li>
               <li>
-                <a href="#">上一页</a>
-              </li>
-              <li class="index active"><a href="#">1</a></li>
-              <li class="index"><a href="#">2</a></li>
-              <li class="index"><a href="#">3</a></li>
-              <li class="index"><a href="#">4</a></li>
-              <li>
-                <a href="#">下一页</a>
+                <a class="gridItem" href="#">
+                  <img class="logo" src="http://7xifa4.com1.z0.glb.clouddn.com/logo.png" alt="logo">
+                  <p><span>模块名称: </span>模块1</p>
+                  <p><span>模块标识: </span>com.foreveross.model</p>
+                </a>
               </li>
               <li>
-                <a href="#">尾页</a>
+                <a class="gridItem" href="#">
+                  <img class="logo" src="http://7xifa4.com1.z0.glb.clouddn.com/logo.png" alt="logo">
+                  <p><span>模块名称: </span>模块1</p>
+                  <p><span>模块标识: </span>com.foreveross.model</p>
+                </a>
               </li>
+              <li>
+                <a class="gridItem" href="#">
+                  <img class="logo" src="http://7xifa4.com1.z0.glb.clouddn.com/logo.png" alt="logo">
+                  <p><span>模块名称: </span>模块1</p>
+                  <p><span>模块标识: </span>com.foreveross.model</p>
+                </a>
+              </li>
+              
             </ul>
-            <div class="detailPane">
-              <div class="detialContent modulesdetail">
-                <table>
-                  <tr>
-                    <th class="tableTitle">版本</th>
-                    <th class="tableTitle">状态</th>
-                    <th class="tableTitle">更新日志</th>
-                  </tr>
-                  <tr>
-                    <td class="tableCell"><span>1111111111111111111</span></td>
-                    <td class="tableCell"><span>1111111111111111111</span></td>
-                    <td class="tableCell"><span>1111111111111111111</span></td>
-                  </tr>
-                  <tr>
-                    <td class="tableCell"><span>1111111111111111111</span></td>
-                    <td class="tableCell"><span>1111111111111111111</span></td>
-                    <td class="tableCell"><span>1111111111111111111</span></td>
-                  </tr>
-                </table>
-              </div>
-            </div>
           </div>
+          <ul class="pageList">
+            <li>
+              <a href="#">首页</a>
+            </li>
+            <li>
+              <a href="#">上一页</a>
+            </li>
+            <li class="index active"><a href="#">1</a></li>
+            <li class="index"><a href="#">2</a></li>
+            <li class="index"><a href="#">3</a></li>
+            <li class="index"><a href="#">4</a></li>
+            <li>
+              <a href="#">下一页</a>
+            </li>
+            <li>
+              <a href="#">尾页</a>
+            </li>
+          </ul>
         </div>
       </div>
+      
     </div>
-    <footer class="footer">
-      COPYRIGHT ® ALL RIGHTS RESERVED 变色龙开发团队
-    </footer>
-    <!-- <![endif]-->
-    <!--[if IE]>
-    <script type="text/javascript">
-    window.jQuery || document.write("<script src='../assets/js/jquery1x.min.js'>"+"<"+"/script>");
-    </script>
-    <![endif]-->
-    <script type="text/javascript">
-    if('ontouchstart' in document.documentElement) document.write("<script src='../assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
-    </script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/ace-elements.min.js"></script>
-    <script src="../assets/js/ace.min.js"></script>
-    <link rel="stylesheet" href="../assets/css/ace.onpage-help.css" />
-    <script type="text/javascript"> ace.vars['base'] = '..'; </script>
-    <script src="../assets/js/ace/elements.onpage-help.js"></script>
-    <script src="../assets/js/ace/ace.onpage-help.js"></script>
-  </body>
+  </div>
+  <footer class="footer">
+    COPYRIGHT ® ALL RIGHTS RESERVED 变色龙开发团队
+  </footer>
+  <!--[if !IE]> -->
+  <script type="text/javascript">
+  window.jQuery || document.write("<script src='../assets/js/jquery.min.js'>"+"<"+"/script>");
+  </script>
+  <!-- <![endif]-->
+  <!--[if IE]>
+  <script type="text/javascript">
+  window.jQuery || document.write("<script src='../assets/js/jquery1x.min.js'>"+"<"+"/script>");
+  </script>
+  <![endif]-->
+  <script type="text/javascript">
+  if('ontouchstart' in document.documentElement) document.write("<script src='../assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+  </script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/ace-elements.min.js"></script>
+  <script src="../assets/js/ace.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/ace.onpage-help.css" />
+  <script type="text/javascript"> ace.vars['base'] = '..'; </script>
+  <script src="../assets/js/ace/elements.onpage-help.js"></script>
+  <script src="../assets/js/ace/ace.onpage-help.js"></script>
+</body>
 </html>
