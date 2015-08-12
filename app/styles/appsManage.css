@@ -26,8 +26,8 @@
   border-radius: 4px;
 }
 .uploadPrivateApp li .qrcode{
-  width: 44px;
-  margin: 0 auto;
+  width: 40px;
+  margin: 2px auto 8px;
 }
 .uploadPrivateApp li p{
   margin-bottom: 5px;
@@ -233,12 +233,12 @@
   border: 1px solid #ccc;
   margin-right: 20px;
 }
-.appdetail ul{
+.appdetail .info ul{
   margin: 10px;
   width: 33%;
   list-style: none;
 }
-.appdetail ul li{
+.appdetail .info ul li{
   margin-bottom: 10px;
   overflow: hidden;
   white-space: nowrap;
@@ -279,5 +279,99 @@ li .title{
   border-color: #158ad8;
 }
 .app-btn .btn.edit{
+  border-color: #158ad8;
+}
+.app-btn .btn.delete{
+  border-color: #e0238c;
+}
+.hideflow{
+  overflow: hidden;
+}
+.tab-content{
+  overflow: hidden;
+}
+.appdetail .nav-tabs a{
+  width: 200px;
+  background-color: #fff;
+  text-align: center;
+  border: none;
+}
+.appdetail .nav-tabs>li.active>a, .appdetail .nav-tabs>li.active>a:focus, .appdetail .nav-tabs>li.active>a:hover{
+  color: #fff;
+  background-color: #158ad8;
+  box-shadow: none;
+}
+.deviceinfo-table{
+  width: 100%;
+}
+.deviceinfo-table thead td{
+  text-align: center;
+  background-color: #158ad8;
+  height: 40px;
+  border: 1px solid #158ad8;
+  color: #fff;
+}
+.deviceinfo-table td{
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.deviceinfo-table .version{
+  width: 10%;
+}
+.deviceinfo-table .download_num{
+  width: 10%;
+}
+.deviceinfo-table .size{
+  width: 10%;
+}
+.deviceinfo-table .pub_date{
+  width: 20%;
+}
+.deviceinfo-table .intro{
+  width: 40%;
+}
+.btn.upgrade{
+  border: 1px solid #14AA6D;
+  border-radius: 4px;
+}
+.out{
+  padding: 4px 20px;
+  margin: 5px 0;
   background-color: #158ad8 !important;
+  border-color: #158ad8;
+  border-width: 1px;
+  border-radius: 4px;
+}
+.appPic{
+  margin: 40px 0;
+}
+.appPic ul{
+  margin: 20px 0 0 0;
+  list-style: none;
+}
+.appPic li{
+  position: relative;
+  display: inline-block;
+  border: 1px solid #ccc;
+  width: 22%;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+.appPic li img{
+  display: block;
+  margin: 30px auto 15px;
+  width: 94%;
+}
+.appPic li:hover{
+  border-color: #158ad8;
+}
+.appPic li .glyphicon-remove{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #fff;
+  background-color: #158ad8;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
 }
