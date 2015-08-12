@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>变色龙QDT</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../assets/css/ace-fonts.css" />
+    <link rel="stylesheet" href="../assets/css/ace.min.css" id="main-ace-style" />
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="../assets/css/ace-part2.min.css" />
+    <![endif]-->
+    <link rel="stylesheet" href="../assets/css/ace-skins.min.css" />
+    <link rel="stylesheet" href="../assets/css/ace-rtl.min.css" />
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="../assets/css/ace-ie.min.css" />
+    <![endif]-->
+    <script src="../assets/js/ace-extra.min.js"></script>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/appsManage.css">
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="topHeader">
+      <div class="container">
+        <img class="logo pull-left" src="../images/header_logo.png" alt="chameleon-logo">
+        <section class="headerNav pull-right">
+          <div class="firstGroup">
+            <div class="searchGroup">
+              <input type="text" class="search form-control" placeholder="搜索">
+              <button class="searchCommit glyphicon glyphicon-search"></button>
+            </div>
+            <div class="userBtnGroup">
+              <div class="buttonContainer">
+                <button class="apps"></button>
+                <span class="righttopNum">15</span>
+              </div>
+              <div class="buttonContainer">
+                <button class="tips"></button>
+                <span class="righttopNum">15</span>
+              </div>
+              <div class="buttonContainer">
+                <button class="msg"></button>
+                <span class="righttopNum">1</span>
+              </div>
+            </div>
+            <div class="userInfoGroup">
+              <img class="userAvatar pull-left" src="../images/icon_photo.png" alt="userAvatar">
+              <div class="dropdown pull-left">
+                <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span class="userName">欢迎你, A先生</span>
+                <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#"><span class="dropMenuIcon info"></span>个人信息</a></li>
+                  <li><a href="#"><span class="dropMenuIcon settings"></span>系统设置</a></li>
+                  <li><a href="../login/login.html"><span class="dropMenuIcon logout"></span>退出</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="secondGroup">
+            <a href="#" class="btn manageNav active">应用管理</a>
+            <a href="../build/build.html" class="btn manageNav">构建管理</a>
+            <a href="../plugins/pluginList.html" class="btn manageNav">插件管理</a>
+            <a href="../modules/modulesList.html" class="btn manageNav">模块管理</a>
+          </div>
+        </section>
+      </div>
+    </header>
+    <div class="appsManage container">
+      <div class="rightPanel">
+        <div class="header">应用版本详情</div>
+        <div class="content">
+          <div class="app-btn btn-group pull-right">
+            <button class="btn put"><span class="tableBtnIcon put"></span>下架</button>
+          </div>
+          <div class="appdetail">
+            <div class="info">
+              <div class="left-container pull-left">
+                <img class="logo" src="http://7xifa4.com1.z0.glb.clouddn.com/logo.png" alt="logo">
+                <img class="qrcode" src="../images/icon_qrcode.png" alt="">
+                <p>扫描二维码</p>
+              </div>
+              <ul class="versionInfo pull-left">
+                <li><span class="title">应用名称: </span>boom</li>
+                <li><span class="title">发布到应用广场: </span>是</li>
+                <li><span class="title">创建时间: </span>2015-06-23</li>
+                <li><span class="title">上架时间: </span>2015-06-25</li>
+                <li><span class="title">状态: </span>已上架</li>
+                <li><span class="title">下载量: </span>12345</li>
+                <li><span class="title">应用简介: </span>这是一款应用</li>
+              </ul>
+            </div>
+            <div class="appModules">
+              <h5>已选模块</h5>
+              <button class="btn add pull-right"><span class="tableBtnIcon"></span>添加模块</button>
+              <ul>
+                <li class="active">
+                  <span class="glyphicon glyphicon-remove"></span>
+                  <img src="http://7xifa4.com1.z0.glb.clouddn.com/logo.png" alt="">
+                  <p>模块1</p>
+                  <select class="versonSelect">
+                    <option value ="1.0">1.0</option>
+                    <option value ="2.0">2.0</option>
+                    <option value="3.0">3.0</option>
+                    <option value="4.0">4.0</option>
+                  </select>
+                </li>
+                <li>
+                  <span class="glyphicon glyphicon-remove"></span>
+                  <img src="http://7xifa4.com1.z0.glb.clouddn.com/logo.png" alt="">
+                  <p>模块1</p>
+                  <select class="versonSelect">
+                    <option value ="1.0">1.0</option>
+                    <option value ="2.0">2.0</option>
+                    <option value="3.0">3.0</option>
+                    <option value="4.0">4.0</option>
+                  </select>
+                </li>
+                <li>
+                  <span class="glyphicon glyphicon-remove"></span>
+                  <img src="http://7xifa4.com1.z0.glb.clouddn.com/logo.png" alt="">
+                  <p>模块1</p>
+                  <select class="versonSelect">
+                    <option value ="1.0">1.0</option>
+                    <option value ="2.0">2.0</option>
+                    <option value="3.0">3.0</option>
+                    <option value="4.0">4.0</option>
+                  </select>
+                </li>
+                <li>
+                  <span class="glyphicon glyphicon-remove"></span>
+                  <img src="http://7xifa4.com1.z0.glb.clouddn.com/logo.png" alt="">
+                  <p>模块1</p>
+                  <select class="versonSelect">
+                    <option value ="1.0">1.0</option>
+                    <option value ="2.0">2.0</option>
+                    <option value="3.0">3.0</option>
+                    <option value="4.0">4.0</option>
+                  </select>
+                </li>
+                <li>
+                  <span class="glyphicon glyphicon-remove"></span>
+                  <img src="http://7xifa4.com1.z0.glb.clouddn.com/logo.png" alt="">
+                  <p>模块1</p>
+                  <select class="versonSelect">
+                    <option value ="1.0">1.0</option>
+                    <option value ="2.0">2.0</option>
+                    <option value="3.0">3.0</option>
+                    <option value="4.0">4.0</option>
+                  </select>
+                </li>
+                <li>
+                  <span class="glyphicon glyphicon-remove"></span>
+                  <img src="http://7xifa4.com1.z0.glb.clouddn.com/logo.png" alt="">
+                  <p>模块1</p>
+                  <select class="versonSelect">
+                    <option value ="1.0">1.0</option>
+                    <option value ="2.0">2.0</option>
+                    <option value="3.0">3.0</option>
+                    <option value="4.0">4.0</option>
+                  </select>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <footer class="footer">
+    COPYRIGHT ® ALL RIGHTS RESERVED 变色龙开发团队
+  </footer>
+  <!--[if !IE]> -->
+  <script type="text/javascript">
+  window.jQuery || document.write("<script src='../assets/js/jquery.min.js'>"+"<"+"/script>");
+  </script>
+  <!-- <![endif]-->
+  <!--[if IE]>
+  <script type="text/javascript">
+  window.jQuery || document.write("<script src='../assets/js/jquery1x.min.js'>"+"<"+"/script>");
+  </script>
+  <![endif]-->
+  <script type="text/javascript">
+  if('ontouchstart' in document.documentElement) document.write("<script src='../assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+  </script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/ace-elements.min.js"></script>
+  <script src="../assets/js/ace.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/ace.onpage-help.css" />
+  <script type="text/javascript"> ace.vars['base'] = '..'; </script>
+  <script src="../assets/js/ace/elements.onpage-help.js"></script>
+  <script src="../assets/js/ace/ace.onpage-help.js"></script>
+</body>
+</html>

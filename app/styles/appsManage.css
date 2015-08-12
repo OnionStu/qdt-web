@@ -333,6 +333,7 @@ li .title{
 .btn.upgrade{
   border: 1px solid #14AA6D;
   border-radius: 4px;
+  position: relative;
 }
 .out{
   padding: 4px 20px;
@@ -342,30 +343,53 @@ li .title{
   border-width: 1px;
   border-radius: 4px;
 }
-.appPic{
+.appPic, .appModules{
   margin: 40px 0;
 }
-.appPic ul{
-  margin: 20px 0 0 0;
+.appPic ul, .appModules ul{
+  margin: 20px 0 20px 0;
   list-style: none;
 }
-.appPic li{
+.appPic ul, .appModules ul{
+  margin-top: 60px;
+}
+.appPic li, .appModules li{
   position: relative;
   display: inline-block;
   border: 1px solid #ccc;
   width: 22%;
   margin-right: 15px;
+  margin-bottom: 15px;
   vertical-align: middle;
 }
-.appPic li img{
+.appModules li{
+  width: 14%;
+  margin-right: 20px;
+}
+.appModules li p{
+  text-align: center;
+  width: 95%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.appPic li img, .appModules li img{
   display: block;
   margin: 30px auto 15px;
   width: 94%;
 }
-.appPic li:hover{
+.appModules li img{
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.appPic li.active, .appModules li.active{
   border-color: #158ad8;
 }
-.appPic li .glyphicon-remove{
+.appPic li.active .glyphicon-remove, .appModules li.active .glyphicon-remove{
+  display: block;
+}
+.appPic li .glyphicon-remove, .appModules li .glyphicon-remove{
   position: absolute;
   right: 10px;
   top: 10px;
@@ -374,4 +398,45 @@ li .title{
   padding: 5px;
   border-radius: 50%;
   cursor: pointer;
+  display: none;
+}
+.selectPic{
+  position:absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  height: 34px;
+  width: 106px;
+}
+.btn.put{
+  border-color: #158ad8;
+}
+.tableBtnIcon.put{
+  transform: rotate(180deg);
+}
+.appdetail ul.versionInfo{
+  width: 67%;
+}
+.info .left-container{
+  padding: 0 20px;
+}
+.info .left-container img{
+  display: block;
+  margin: 0 auto;
+}
+.info .left-container .qrcode{
+  width: 80px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.info .left-container p{
+  text-align: center;
+}
+.versonSelect{
+  margin: 0 auto 20px;
+  display: block;
+}
+.btn.add{
+  border: 1px solid #129c69;
+  border-radius: 4px;
 }
