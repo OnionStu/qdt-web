@@ -1,8 +1,40 @@
 .appsManage .leftNavHeaderIcon{
   background: url('../images/icon_application.png');
 }
-.uploadPrivateApp{
-  margin-top: 20px;
+.uploadPrivateApp,
+.appdetail{
+  margin-top: 60px;
+}
+.uploadPrivateApp ul{
+  margin: 0;
+  list-style: none;
+}
+.uploadPrivateApp li{
+  display: inline-block;
+  width: 22%;
+  padding: 20px 0 10px 0;
+  border: 1px solid #ccc;
+  margin: 0 10px 20px;
+}
+.uploadPrivateApp li img{
+  display: block;
+}
+.uploadPrivateApp li .logo{
+  width: 70px;
+  margin: 0 auto 10px;
+  box-shadow: 0 1px 5px #888;
+  border-radius: 4px;
+}
+.uploadPrivateApp li .qrcode{
+  width: 44px;
+  margin: 0 auto;
+}
+.uploadPrivateApp li p{
+  margin-bottom: 5px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .fileInputBtn{
   position: relative;
@@ -172,5 +204,80 @@
   margin-left: 200px;
 }
 .rightPanel .content{
-  padding: 40px;
+  padding: 10px 40px;
+}
+.appItem{
+  display: block;
+  color: #000;
+  
+}
+.appItem:hover{
+  text-decoration: none;
+}
+.btn-group .btn:first-child{
+  margin-right: 15px;
+}
+.btn-group .btn{
+  width: 100px;
+  border-radius: 4px !important;
+}
+.appdetail .info{
+  overflow: hidden;
+  padding: 0 20px;
+  width: 80%;
+  margin: 0 auto 40px;
+}
+.appdetail .logo{
+  width: 150px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 20px;
+}
+.appdetail ul{
+  margin: 10px;
+  width: 33%;
+  list-style: none;
+}
+.appdetail ul li{
+  margin-bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+li .title{
+  font-weight: 800;
+  margin-right: 5px;
+}
+.qrcode-btn{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: top;
+  background: url('../images/icon_qrcode.png');
+  background-size: 30px;
+  cursor: pointer;
+}
+.icon-waring{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: bottom;
+  background: url('../images/icon_warning.png');
+}
+.warning-desc{
+  color: #1987e0;
+  text-align: center;
+}
+.build-btn{
+  margin: 30px 0 20px 0;
+  text-align: center;
+}
+.build-btn .btn{
+  width: 200px;
+  background-color: #158ad8 !important;
+  border-color: #158ad8;
+}
+.app-btn .btn.edit{
+  background-color: #158ad8 !important;
 }
