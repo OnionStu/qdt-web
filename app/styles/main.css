@@ -263,6 +263,9 @@ button.msg+.righttopNum{
   width: 100%;
   table-layout: fixed;
 }
+.table-hover>tbody>tr:hover>.tableTitle{
+  background-color: #158ad8;
+}
 .tableTitle{
   width: auto;
   height: 40px;
