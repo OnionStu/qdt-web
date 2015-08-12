@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>变色龙QDT</title>
-  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>变色龙QDT</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../assets/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../assets/css/ace-fonts.css" />
     <link rel="stylesheet" href="../assets/css/ace.min.css" id="main-ace-style" />
@@ -18,139 +18,139 @@
     <link rel="stylesheet" href="../assets/css/ace-ie.min.css" />
     <![endif]-->
     <script src="../assets/js/ace-extra.min.js"></script>
-  <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/user.css">
-  <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/user.css">
+    <!--[if lt IE 9]>
     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
+    <![endif]-->
   </head>
-<body>
-  <header class="topHeader">
-    <div class="container">
-      <img class="logo pull-left" src="../images/header_logo.png" alt="chameleon-logo">
-      <section class="headerNav pull-right">
-        <div class="firstGroup">
-          <div class="searchGroup">
-            <input type="text" class="search form-control" placeholder="搜索">
-            <button class="searchCommit glyphicon glyphicon-search"></button>
-          </div>
-          <div class="userBtnGroup">
-            <div class="buttonContainer">
-              <button class="apps"></button>
-              <span class="righttopNum">15</span>
+  <body>
+    <header class="topHeader">
+      <div class="container">
+        <img class="logo pull-left" src="../images/header_logo.png" alt="chameleon-logo">
+        <section class="headerNav pull-right">
+          <div class="firstGroup">
+            <div class="searchGroup">
+              <input type="text" class="search form-control" placeholder="搜索">
+              <button class="searchCommit glyphicon glyphicon-search"></button>
             </div>
-            <div class="buttonContainer">
-              <button class="tips"></button>
-              <span class="righttopNum">15</span>
+            <div class="userBtnGroup">
+              <div class="buttonContainer">
+                <button class="apps"></button>
+                <span class="righttopNum">15</span>
+              </div>
+              <div class="buttonContainer">
+                <button class="tips"></button>
+                <span class="righttopNum">15</span>
+              </div>
+              <div class="buttonContainer">
+                <button class="msg"></button>
+                <span class="righttopNum">1</span>
+              </div>
             </div>
-            <div class="buttonContainer">
-              <button class="msg"></button>
-              <span class="righttopNum">1</span>
-            </div>
-          </div>
-          <div class="userInfoGroup">
-            <img class="userAvatar pull-left" src="../images/icon_photo.png" alt="userAvatar">
-            <div class="dropdown pull-left">
-              <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <div class="userInfoGroup">
+              <img class="userAvatar pull-left" src="../images/icon_photo.png" alt="userAvatar">
+              <div class="dropdown pull-left">
+                <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 <span class="userName">欢迎你, A先生</span>
                 <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#"><span class="dropMenuIcon info"></span>个人信息</a></li>
-                <li><a href="#"><span class="dropMenuIcon settings"></span>系统设置</a></li>
-                <li><a href="../login/login.html"><span class="dropMenuIcon logout"></span>退出</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="secondGroup">
-          <a href="#" class="btn manageNav btn-round">应用管理</a>
-          <a href="../build/build.html" class="btn manageNav btn-round">构建管理</a>
-          <a href="#" class="btn manageNav btn-round">插件管理</a>
-          <a href="#" class="btn manageNav btn-round">模块管理</a>
-        </div>
-      </section>
-    </div>
-  </header>
-  <div class="userInfo container">
-<!--     <div class="leftNav pull-left">
-      <div class="header"><span class="leftNavHeaderIcon"></span>个人信息</div>
-      <ul>
-        <li class="active"><a>基本信息</a></li>
-        <li><a href="./changePassword.html">修改密码</a></li>
-      </ul>
-    </div> -->
-    <div class="rightPanel">
-      <div class="header">基本信息</div>
-      <div class="content">
-        <form class="userInfoForm">
-          <div>
-            <label for="appLogo" class="toplabel">上传头像</label>
-            <div class="formRow">
-              <img alt="applogo" class="logoImg pull-left" src="../images/avatar.png">
-              <div class="logoBtnContainer">
-                <a class="btn logoBtn btn-round no-border">选择图片<input type="file" class="logoInput" id="appLogo"></a>
-                <p>支持 png, jpg 格式，不大于2M</p>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#"><span class="dropMenuIcon info"></span>个人信息</a></li>
+                  <li><a href="#"><span class="dropMenuIcon settings"></span>系统设置</a></li>
+                  <li><a href="../login/login.html"><span class="dropMenuIcon logout"></span>退出</a></li>
+                </ul>
               </div>
             </div>
           </div>
-          <div>
-            <label for="name">昵称</label>
-            <input type="text" class="textInput form-control" id="name">
+          <div class="secondGroup">
+            <a href="../appsManage/appsView.html" class="btn manageNav btn-round">应用管理</a>
+            <a href="../modules/modulesList.html" class="btn manageNav btn-round">模块管理</a>
+            <a href="../plugins/pluginList.html" class="btn manageNav btn-round">插件管理</a>
+            <a href="../build/buildLog.html" class="btn manageNav btn-round">构建日志</a>
           </div>
-          <div>
-            <label for="sex">性别</label>
-            <input type="text" class="textInput form-control" id="sex">
-          </div>
-          <div>
-            <label for="desc">个人介绍</label>
-            <input type="text" class="textInput form-control" id="desc">
-          </div>
-          <div>
-            <label for="email">邮箱</label>
-            <input type="email" class="textInput form-control" id="email">
-          </div>
-          <div>
-            <label for="tel" class="toplabel">电话</label>
-            <input type="tel" class="textInput form-control" id="tel">
-          </div>
-          <div>
-            <label for="homepage" class="toplabel">个人主页</label>
-            <input type="url" class="textInput form-control" id="homepage">
-          </div>
-          <div>
-            <button class="btn save btn-round">保存</button>
-            <button class="btn reset btn-round">重置</button>
-            <a class="btn change-pwd btn-round" href="./changePassword.html">修改密码</a>
-          </div>
-        </form>
+        </section>
       </div>
-    </div>
+    </header>
+    <div class="userInfo container">
+      <!--     <div class="leftNav pull-left">
+        <div class="header"><span class="leftNavHeaderIcon"></span>个人信息</div>
+        <ul>
+          <li class="active"><a>基本信息</a></li>
+          <li><a href="./changePassword.html">修改密码</a></li>
+        </ul>
+      </div> -->
+      <div class="rightPanel">
+        <div class="header">基本信息</div>
+        <div class="content">
+          <form class="userInfoForm">
+            <div>
+              <label for="appLogo" class="toplabel">上传头像</label>
+              <div class="formRow">
+                <img alt="applogo" class="logoImg pull-left" src="../images/avatar.png">
+                <div class="logoBtnContainer">
+                  <a class="btn logoBtn btn-round no-border">选择图片<input type="file" class="logoInput" id="appLogo"></a>
+                  <p>支持 png, jpg 格式，不大于2M</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <label for="name">昵称</label>
+              <input type="text" class="textInput form-control" id="name">
+            </div>
+            <div>
+              <label for="sex">性别</label>
+              <input type="text" class="textInput form-control" id="sex">
+            </div>
+            <div>
+              <label for="desc">个人介绍</label>
+              <input type="text" class="textInput form-control" id="desc">
+            </div>
+            <div>
+              <label for="email">邮箱</label>
+              <input type="email" class="textInput form-control" id="email">
+            </div>
+            <div>
+              <label for="tel" class="toplabel">电话</label>
+              <input type="tel" class="textInput form-control" id="tel">
+            </div>
+            <div>
+              <label for="homepage" class="toplabel">个人主页</label>
+              <input type="url" class="textInput form-control" id="homepage">
+            </div>
+            <div>
+              <button class="btn save btn-round">保存</button>
+              <button class="btn reset btn-round">重置</button>
+              <a class="btn change-pwd btn-round" href="./changePassword.html">修改密码</a>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
   <footer class="footer">
     COPYRIGHT ® ALL RIGHTS RESERVED 变色龙开发团队
   </footer>
   <!--[if !IE]> -->
-    <script type="text/javascript">
-    window.jQuery || document.write("<script src='../assets/js/jquery.min.js'>"+"<"+"/script>");
-    </script>
-    <!-- <![endif]-->
-    <!--[if IE]>
-    <script type="text/javascript">
-    window.jQuery || document.write("<script src='../assets/js/jquery1x.min.js'>"+"<"+"/script>");
-    </script>
-    <![endif]-->
-    <script type="text/javascript">
-    if('ontouchstart' in document.documentElement) document.write("<script src='../assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
-    </script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/ace-elements.min.js"></script>
-    <script src="../assets/js/ace.min.js"></script>
-    <link rel="stylesheet" href="../assets/css/ace.onpage-help.css" />
-    <script type="text/javascript"> ace.vars['base'] = '..'; </script>
-    <script src="../assets/js/ace/elements.onpage-help.js"></script>
-    <script src="../assets/js/ace/ace.onpage-help.js"></script>
+  <script type="text/javascript">
+  window.jQuery || document.write("<script src='../assets/js/jquery.min.js'>"+"<"+"/script>");
+  </script>
+  <!-- <![endif]-->
+  <!--[if IE]>
+  <script type="text/javascript">
+  window.jQuery || document.write("<script src='../assets/js/jquery1x.min.js'>"+"<"+"/script>");
+  </script>
+  <![endif]-->
+  <script type="text/javascript">
+  if('ontouchstart' in document.documentElement) document.write("<script src='../assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+  </script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/ace-elements.min.js"></script>
+  <script src="../assets/js/ace.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/ace.onpage-help.css" />
+  <script type="text/javascript"> ace.vars['base'] = '..'; </script>
+  <script src="../assets/js/ace/elements.onpage-help.js"></script>
+  <script src="../assets/js/ace/ace.onpage-help.js"></script>
 </body>
 </html>
