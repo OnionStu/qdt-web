@@ -454,10 +454,10 @@ button.msg+.righttopNum{
 .btn.detail:hover,.btn.edit:hover,.btn.put:hover,.btn.relevance:hover,.btn.qrcode:hover{
   background: #117ac1!important;
 }
-.btn.upgrade,.btn.add{
+.btn.upgrade,.btn.add,.btn.upload{
   background: #14aa72!important;
 }
-.btn.upgrade:hover,.btn.add:hover{
+.btn.upgrade:hover,.btn.add:hover,.btn.upload:hover{
   background: #129c69!important;
 }
 .btn.delete,.btn.deleteAll{
@@ -559,4 +559,53 @@ button.msg+.righttopNum{
   height: 35px;
   opacity: 0;
   filter:alpha(opacity=0); 
+}
+
+/*格子列表*/
+.gridList{
+  margin-top: 60px;
+}
+.gridList ul{
+  margin: 0;
+  list-style: none;
+}
+.gridList li{
+  display: inline-block;
+  width: 22%;
+  padding: 20px 0 10px 0;
+  border: 1px solid #ccc;
+  margin: 0 10px 20px;
+}
+.gridList li img{
+  display: block;
+}
+.gridList li .logo{
+  width: 70px;
+  margin: 0 auto 10px;
+  box-shadow: 0 1px 5px #888;
+  border-radius: 4px;
+}
+.gridList li .qrcode{
+  width: 44px;
+  margin: 0 auto;
+}
+.gridList li p{
+  margin-bottom: 5px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.gridList .gridItem {
+    display: block;
+    color: #000;
+}
+.gridList .gridItem:hover {
+  text-decoration: none;
+}
+.gridList .gridItem:focus {
+  outline: none;
+}
+.gridList + .pageList{
+  border:none;
 }

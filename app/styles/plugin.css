@@ -54,10 +54,13 @@
 .pluginDetail table td>span:first-child{
   min-width: 65px;
 }
-
+.btn.upload{
+  border: none;
+}
 [class$="Form"] .btn{
   color: #FFF;
   background: #158AD8;
   width: 120px;
   position: relative;
 }
+

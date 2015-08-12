@@ -9,3 +9,6 @@
 .rightPanel .content{
 	padding: 15px;
 }
+.btn.upload{
+  border: none;
+}
