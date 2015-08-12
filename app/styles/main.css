@@ -236,12 +236,18 @@ button.msg+.righttopNum{
 }
 .manageNav{
   width: 110px;
-  color: #fff;
+  color: #fff!important;
+  background-color: transparent!important;
+  border: none;
 }
 .manageNav:focus,.manageNav:hover,.manageNav.active,.manageNav:active{
-  background: #117ac1;
-  color: #eee;
+  background: #117ac1!important;
+  color: #eee!important;
   box-shadow:none;
+}
+
+.btn.manageNav.active:after{
+  display: none;
 }
 /*--- end header ---*/
 
@@ -290,6 +296,7 @@ button.msg+.righttopNum{
 }
 .leftNav ul{
   padding: 0;
+  margin: 0;
 }
 .leftNav li{
   position: relative;
@@ -429,22 +436,23 @@ button.msg+.righttopNum{
   background: url('../images/icon_delete.png') no-repeat;
 }
 .btn.detail,.btn.edit{
-  background: #158ad8;
+  background: #158ad8!important;
+  padding: 0;
 }
 .btn.detail:hover,.btn.edit:hover{
-  background: #117ac1;
+  background: #117ac1!important;
 }
 .btn.upgrade,.btn.add{
-  background: #14aa72;
+  background: #14aa72!important;
 }
 .btn.upgrade:hover,.btn.add:hover{
-  background: #129c69;
+  background: #129c69!important;
 }
 .btn.delete,.btn.deleteAll{
-  background: #e0238c;
+  background: #e0238c!important;
 }
 .btn.delete:hover,.btn.deleteAll:hover{
-  background: #b62168; 
+  background: #b62168!important; 
 }
 
 /*详情框*/
