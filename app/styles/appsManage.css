@@ -118,11 +118,17 @@
   padding: 0;
   text-align: center;
 }
-.tabGroup li.active{
-  background: #158ad8;
-}
 .tabGroup li.active a{
   color: #fff;
+}
+.tabGroup li{
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  line-height: 35px;
+  background: #eee;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 .tabGroup li:first-of-type{
   border: 1px solid #ccc;
@@ -132,12 +138,10 @@
   border: 1px solid #ccc;
   border-radius: 0 4px 4px 0;
 }
-.tabGroup li{
-  display: inline-block;
-  list-style: none;
-  text-align: center;
-  line-height: 35px;
-  background: #eee;
+.tabGroup li.active{
+  background: #158ad8;
+  border-bottom: 1px solid #158ad8;
+  border-top: 1px solid #158ad8;
 }
 .tabGroup li a{
   display: block;
@@ -160,4 +164,13 @@
 .commitContainer .btn{
   background: #158ad8;
   color: #fff;
+}
+.detailRow{
+  margin: 30px 0 50px 0;
+}
+.appdetail .logoBtnContainer{
+  margin-left: 200px;
+}
+.rightPanel .content{
+  padding: 40px;
 }

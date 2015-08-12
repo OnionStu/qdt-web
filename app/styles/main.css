@@ -341,7 +341,7 @@ button.msg+.righttopNum{
 }
 .rightPanel .header{
   border-bottom: 1px solid #ccc;
-  /*border: none;*/
+  margin: 0;
 }
 .leftNavHeaderIcon{
   display: inline-block;
@@ -352,7 +352,6 @@ button.msg+.righttopNum{
 }
 /* 右边内容框 */
 .rightPanel{
-  margin-left: 190px;
   margin-bottom: 20px;
   background: #fff;
   border: 1px solid #ccc;
@@ -409,7 +408,7 @@ button.msg+.righttopNum{
 
 /*表格按钮组*/
 .tableBtnGroup .btn{
-  width: 94px;
+  width: 100px;
   height: 33px;
   color: #fff;
 }
@@ -435,11 +434,20 @@ button.msg+.righttopNum{
 .delete .tableBtnIcon{
   background: url('../images/icon_delete.png') no-repeat;
 }
-.btn.detail,.btn.edit{
-  background: #158ad8!important;
-  padding: 0;
+.put .tableBtnIcon{
+  background: url('../images/icon_up.png') no-repeat;
 }
-.btn.detail:hover,.btn.edit:hover{
+.relevance .tableBtnIcon{
+  background: url('../images/icon_models.png') no-repeat;
+}
+.qrcode .tableBtnIcon{
+  background: url('../images/icon_qrcode.png') no-repeat;
+}
+
+.btn.detail,.btn.edit,.btn.put,.btn.relevance,.btn.qrcode{
+  background: #158ad8!important;
+}
+.btn.detail:hover,.btn.edit:hover,.btn.put:hover,.btn.relevance:hover,.btn.qrcode:hover{
   background: #117ac1!important;
 }
 .btn.upgrade,.btn.add{
