@@ -383,13 +383,21 @@ li .title{
   border: 1px solid #ccc;
   border-radius: 6px;
 }
-.appPic li.active, .appModules li.active{
+.appPic li.active, 
+.appModules li.active,
+.apptype.active{
   border-color: #158ad8;
 }
-.appPic li.active .glyphicon-remove, .appModules li.active .glyphicon-remove{
+.appPic li.active .glyphicon-remove, 
+.appModules li.active .glyphicon-remove, 
+.appModules .bsl.modal li.active .glyphicon-ok,
+.apptype.active .glyphicon-ok{
   display: block;
 }
-.appPic li .glyphicon-remove, .appModules li .glyphicon-remove{
+.appPic li .glyphicon-remove, 
+.appModules li .glyphicon-remove,
+.appModules .bsl.modal li .glyphicon-ok,
+.apptype .glyphicon-ok{
   position: absolute;
   right: 10px;
   top: 10px;
@@ -428,6 +436,7 @@ li .title{
   width: 80px;
   margin-top: 20px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .info .left-container p{
   text-align: center;
@@ -439,4 +448,95 @@ li .title{
 .btn.add{
   border: 1px solid #129c69;
   border-radius: 4px;
+}
+.bsl.modal li{
+  width: 21%;
+}
+.apptype-container{
+  margin-top: 50px;
+  text-align: center;
+}
+.apptype{
+  display: inline-block;
+  position: relative;
+  width: 230px;
+  height: 280px;
+  padding: 50px 10px 30px;
+  margin: 0 50px;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+}
+.apptype img{
+  margin-bottom: 20px;
+}
+.next-container{
+  text-align: center;
+  margin-top: 40px;
+}
+.next-container .btn.next{
+  border: 1px solid #158ad8;
+  background-color: #158ad8 !important;
+  width: 150px;
+  border-radius: 5px;
+}
+.create-step ul{
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+}
+.create-step li{
+  float: left;
+  position: relative;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.create-step li a{
+  color: #000;
+}
+.create-step li.active{
+  background-color: #158ad8;
+  padding-right: 0;
+}
+.create-step li.active a{
+  color: #fff;
+}
+.create-step li.active:after{
+  content: '';
+  position: absolute;
+  width:0px;
+  height:0px;
+  top: 0;
+  right: -20px;
+  border-bottom:20px solid transparent;  /* left arrow slant */
+  border-top:20px solid transparent; /* right arrow slant */
+  border-left:20px solid #158ad8; /* bottom, add background color here */
+
+}
+.create-step li:first-child{
+  border-left: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+.create-step li:last-child{
+  border-right: 1px solid #ccc;
+  border-radius: 0 5px 5px 0;
+}
+.create-step li:last-child::after{
+  display: none
+}
+
+.create-step li .index{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 50%;
+  background-color: #158ad8;
+  text-align: center;
+  color: #fff;
+  margin-right: 5px;
+}
+.create-step li.active .index{
+  color: #158ad8;
+  background-color: #fff;
 }
