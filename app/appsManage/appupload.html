@@ -66,9 +66,9 @@
           </div>
           <div class="secondGroup">
             <a href="appsView.html" class="btn manageNav active">应用管理</a>
-            <a href="../build/build.html" class="btn manageNav">构建管理</a>
-            <a href="../plugins/pluginList.html" class="btn manageNav">插件管理</a>
-            <a href="../modules/modulesList.html" class="btn manageNav">模块管理</a>
+            <a href="../modules/modulesList.html" class="btn manageNav btn-round">模块管理</a>
+            <a href="../plugins/pluginList.html" class="btn manageNav btn-round">插件管理</a>
+            <a href="../build/buildLog.html" class="btn manageNav btn-round">构建日志</a>
           </div>
         </section>
       </div>
@@ -77,23 +77,18 @@
       <div class="rightPanel">
         <div class="header">应用创建</div>
         <div class="content">
-          <div class="flag" id="modules"><span class="flag_icon"></span>选择应用类型</div>
-          <div class="apptype-container">
-            <div class="apptype active">
-              <span class="glyphicon glyphicon-ok"></span>
-              <img src="../images/icon_onlineapp.png" alt="">
-              <h5>云应用</h5>
-              <p>创建云应用，在线生成安装包</p>
-            </div>
-            <div class="apptype">
-              <span class="glyphicon glyphicon-ok"></span>
-              <img src="../images/icon_locateapp.png" alt="">
-              <h5>上传应用</h5>
-              <p>上传客户端安装程序，不使用平台构建功能</p>
-            </div>
+          <div class="flag" id="modules"><span class="flag_icon"></span>上传应用</div>
+          <div class="uploadForm">
+            <form action="./dummy.html" class="dropzone dz-clickable" id="dropzone">
+              <div class="dz-default dz-message">
+                <p><button class="btn upgrade"><span class="tableBtnIcon"></span>点击上传</button></p>
+                <p>点击按钮选择应用的安装包，或拖曳文件到此区域</p>
+                <p>(支持.ipa或.apk文件，单个文件最大支持500M)</p>
+              </div>
+            </form>
           </div>
           <div class="next-container">
-            <a class="btn next" href="appplatform.html">下一步</a>
+            <a class="btn next" href="uploadinfo.html">下一步</a>
           </div>
         </div>
       </div>
@@ -123,5 +118,6 @@
   <script type="text/javascript"> ace.vars['base'] = '..'; </script>
   <script src="../assets/js/ace/elements.onpage-help.js"></script>
   <script src="../assets/js/ace/ace.onpage-help.js"></script>
+  <script src="../assets/js/dropzone.min.js"></script>
 </body>
 </html>

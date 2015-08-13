@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>变色龙QDT</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../assets/css/ace-fonts.css" />
+    <link rel="stylesheet" href="../assets/css/ace.min.css" id="main-ace-style" />
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="../assets/css/ace-part2.min.css" />
+    <![endif]-->
+    <link rel="stylesheet" href="../assets/css/ace-skins.min.css" />
+    <link rel="stylesheet" href="../assets/css/ace-rtl.min.css" />
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="../assets/css/ace-ie.min.css" />
+    <![endif]-->
+    <script src="../assets/js/ace-extra.min.js"></script>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/appsManage.css">
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="topHeader">
+      <div class="container">
+        <img class="logo pull-left" src="../images/header_logo.png" alt="chameleon-logo">
+        <section class="headerNav pull-right">
+          <div class="firstGroup">
+            <div class="searchGroup">
+              <input type="text" class="search form-control" placeholder="搜索">
+              <button class="searchCommit glyphicon glyphicon-search"></button>
+            </div>
+            <div class="userBtnGroup">
+              <div class="buttonContainer">
+                <button class="apps"></button>
+                <span class="righttopNum">15</span>
+              </div>
+              <div class="buttonContainer">
+                <button class="tips"></button>
+                <span class="righttopNum">15</span>
+              </div>
+              <div class="buttonContainer">
+                <button class="msg"></button>
+                <span class="righttopNum">1</span>
+              </div>
+            </div>
+            <div class="userInfoGroup">
+              <img class="userAvatar pull-left" src="../images/icon_photo.png" alt="userAvatar">
+              <div class="dropdown pull-left">
+                <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span class="userName">欢迎你, A先生</span>
+                <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#"><span class="dropMenuIcon info"></span>个人信息</a></li>
+                  <li><a href="#"><span class="dropMenuIcon settings"></span>系统设置</a></li>
+                  <li><a href="../login/login.html"><span class="dropMenuIcon logout"></span>退出</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="secondGroup">
+            <a href="appsView.html" class="btn manageNav active">应用管理</a>
+            <a href="../modules/modulesList.html" class="btn manageNav btn-round">模块管理</a>
+            <a href="../plugins/pluginList.html" class="btn manageNav btn-round">插件管理</a>
+            <a href="../build/buildLog.html" class="btn manageNav btn-round">构建日志</a>
+          </div>
+        </section>
+      </div>
+    </header>
+    <div class="appsManage container">
+      <div class="rightPanel">
+        <div class="header">应用创建</div>
+        <div class="content">
+          <div class="create-step">
+            <span>创建步骤: </span>
+            <ul>
+              <li><a href="appplatform.html"><span class="index">1</span>平台选择</a></li>
+              <li><a href="appinfo.html"><span class="index">2</span>基本信息</a></li>
+              <li><a href="appmodules.html"><span class="index">3</span>模块选择</a></li>
+              <li><a href="appplugins.html"><span class="index">4</span>插件选择</a></li>
+              <li class="active"><a href="#"><span class="index">5</span>证书管理</a></li>
+            </ul>
+          </div>
+          <div class="certificate-container">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#ios" aria-controls="ios" role="tab" data-toggle="tab">iOS发布证书</a></li>
+              <li role="presentation"><a href="#iosen" aria-controls="iosen" role="tab" data-toggle="tab">iOS企业证书</a></li>
+              <li role="presentation"><a href="#android" aria-controls="android" role="tab" data-toggle="tab">Android证书</a></li>
+            </ul>
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="ios">
+                <ul class="certificate-info">
+                  <li>
+                    <label>App ID</label>
+                    <div class="info-input">
+                      <input type="text">
+                      <p>发布到Appstore上的应用都有一个App ID<a href="#">查看如何申请AppID</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <label>distribution.p12</label>
+                    <div class="info-input upload">
+                      <input type="text">
+                      <button class="btn common">上传<input class="selectPic" type="file"></button>
+                      <p>distribution.p12文件就是你导出的发布证书<a href="#">查看如何导出证书</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <label>certificate password</label>
+                    <div class="info-input">
+                      <input type="text">
+                      <p>certificate password是你导出发布证书时填写的密码<a href="#">查看p12文件添加密码</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <label>distribution.mbileprovision</label>
+                    <div class="info-input upload">
+                      <input type="text">
+                      <button class="btn common">上传<input class="selectPic" type="file"></button>
+                      <p>distribution.mbileprovision生成的发布描述文件</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="next-container">
+                  <a class="btn next" href="#">生成安装包</a>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane active" id="iosen">
+                <ul class="certificate-info">
+                  <li>
+                    <label>App ID</label>
+                    <div class="info-input">
+                      <input type="text">
+                      <p>发布到Appstore上的应用都有一个App ID<a href="#">查看如何申请AppID</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <label>distribution.p12</label>
+                    <div class="info-input upload">
+                      <input type="text">
+                      <button class="btn common">上传<input class="selectPic" type="file"></button>
+                      <p>distribution.p12文件就是你导出的发布证书<a href="#">查看如何导出证书</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <label>certificate password</label>
+                    <div class="info-input">
+                      <input type="text">
+                      <p>certificate password是你导出发布证书时填写的密码<a href="#">查看p12文件添加密码</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <label>distribution.mbileprovision</label>
+                    <div class="info-input upload">
+                      <input type="text">
+                      <button class="btn common">上传<input class="selectPic" type="file"></button>
+                      <p>distribution.mbileprovision生成的发布描述文件</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="next-container">
+                  <a class="btn next" href="#">生成安装包</a>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="android">
+                <ul class="certificate-info">
+                  <li>
+                    <label>Keystore别名</label>
+                    <div class="info-input">
+                      <input type="text">
+                      <p>生成数字签名文件时设置的文件名称</p>
+                    </div>
+                  </li>
+                  <li>
+                    <label>Android证书文件</label>
+                    <div class="info-input upload">
+                      <input type="text">
+                      <button class="btn common">上传<input class="selectPic" type="file"></button>
+                    </div>
+                  </li>
+                  <li>
+                    <label>Android证书存储库口令</label>
+                    <div class="info-input">
+                      <input type="text">
+                      <p>证书存储库口令是你导出发布证书时填写的存储密码</p>
+                    </div>
+                  </li>
+                  <li>
+                    <label>Android证书密钥库口令</label>
+                    <div class="info-input">
+                      <input type="text">
+                      <p>证书密钥库口令是你导出证书时填写的密钥库密码</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="next-container">
+                  <a class="btn next" href="#">生成安装包</a>
+                </div>
+                <p>如果你没有证书，可以使用一键创建证书功能</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <footer class="footer">
+    COPYRIGHT ® ALL RIGHTS RESERVED 变色龙开发团队
+  </footer>
+  <!--[if !IE]> -->
+  <script type="text/javascript">
+  window.jQuery || document.write("<script src='../assets/js/jquery.min.js'>"+"<"+"/script>");
+  </script>
+  <!-- <![endif]-->
+  <!--[if IE]>
+  <script type="text/javascript">
+  window.jQuery || document.write("<script src='../assets/js/jquery1x.min.js'>"+"<"+"/script>");
+  </script>
+  <![endif]-->
+  <script type="text/javascript">
+  if('ontouchstart' in document.documentElement) document.write("<script src='../assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+  </script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/ace-elements.min.js"></script>
+  <script src="../assets/js/ace.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/ace.onpage-help.css" />
+  <script type="text/javascript"> ace.vars['base'] = '..'; </script>
+  <script src="../assets/js/ace/elements.onpage-help.js"></script>
+  <script src="../assets/js/ace/ace.onpage-help.js"></script>
+</body>
+</html>

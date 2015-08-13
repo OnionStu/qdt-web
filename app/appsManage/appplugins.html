@@ -66,9 +66,9 @@
           </div>
           <div class="secondGroup">
             <a href="appsView.html" class="btn manageNav active">应用管理</a>
-            <a href="../build/build.html" class="btn manageNav">构建管理</a>
-            <a href="../plugins/pluginList.html" class="btn manageNav">插件管理</a>
-            <a href="../modules/modulesList.html" class="btn manageNav">模块管理</a>
+            <a href="../modules/modulesList.html" class="btn manageNav btn-round">模块管理</a>
+            <a href="../plugins/pluginList.html" class="btn manageNav btn-round">插件管理</a>
+            <a href="../build/buildLog.html" class="btn manageNav btn-round">构建日志</a>
           </div>
         </section>
       </div>
@@ -77,23 +77,51 @@
       <div class="rightPanel">
         <div class="header">应用创建</div>
         <div class="content">
-          <div class="flag" id="modules"><span class="flag_icon"></span>选择应用类型</div>
-          <div class="apptype-container">
-            <div class="apptype active">
-              <span class="glyphicon glyphicon-ok"></span>
-              <img src="../images/icon_onlineapp.png" alt="">
-              <h5>云应用</h5>
-              <p>创建云应用，在线生成安装包</p>
-            </div>
-            <div class="apptype">
-              <span class="glyphicon glyphicon-ok"></span>
-              <img src="../images/icon_locateapp.png" alt="">
-              <h5>上传应用</h5>
-              <p>上传客户端安装程序，不使用平台构建功能</p>
-            </div>
+          <div class="create-step">
+            <span>创建步骤: </span>
+            <ul>
+              <li><a href="appplatform.html"><span class="index">1</span>平台选择</a></li>
+              <li><a href="appinfo.html"><span class="index">2</span>基本信息</a></li>
+              <li><a href="appmodules.html"><span class="index">3</span>模块选择</a></li>
+              <li class="active"><a href="#"><span class="index">4</span>插件选择</a></li>
+              <li><a href="appcertificate.html"><span class="index">5</span>证书管理</a></li>
+            </ul>
+          </div>
+          <div class="selectedModules">
+            <span>已选插件: </span>
+            <ul>
+              <li>插件一<span class="glyphicon glyphicon-remove"></span></li>
+            </ul>
+          </div>
+          <div class="moudles-container">
+            <ul class="detaiInfolList">
+              <li class="active">
+                <span class="glyphicon glyphicon-ok"></span>
+                <img src="http://7xifa4.com1.z0.glb.clouddn.com/logo.png" alt="">
+                <p>插件1</p>
+                <select class="versonSelect">
+                  <option value="1.0">1.0</option>
+                  <option value="2.0">2.0</option>
+                  <option value="3.0">3.0</option>
+                  <option value="4.0">4.0</option>
+                </select>
+              </li>
+              <li>
+                <span class="glyphicon glyphicon-ok"></span>
+                <img src="http://7xifa4.com1.z0.glb.clouddn.com/logo.png" alt="">
+                <p>插件1</p>
+                <select class="versonSelect">
+                  <option value="1.0">1.0</option>
+                  <option value="2.0">2.0</option>
+                  <option value="3.0">3.0</option>
+                  <option value="4.0">4.0</option>
+                </select>
+              </li>
+            </ul>
           </div>
           <div class="next-container">
-            <a class="btn next" href="appplatform.html">下一步</a>
+            <a class="btn prev" href="appmodules.html">上一步</a>
+            <a class="btn next" href="appcertificate.html">下一步</a>
           </div>
         </div>
       </div>

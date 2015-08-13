@@ -758,7 +758,8 @@ button.msg+.righttopNum{
 .detaiInfolList li.active{
   border-color: #158ad8;
 }
-.detaiInfolList li .glyphicon-remove{
+.detaiInfolList li .glyphicon-remove,
+.detaiInfolList li .glyphicon-ok{
   position: absolute;
   right: 10px;
   top: 10px;
@@ -769,7 +770,8 @@ button.msg+.righttopNum{
   cursor: pointer;
   display: none;
 }
-.detaiInfolList li.active .glyphicon-remove{
+.detaiInfolList li.active .glyphicon-remove,
+.detaiInfolList li.active .glyphicon-ok{
   display: block;
 }
 .detaiInfolList .versonCode {

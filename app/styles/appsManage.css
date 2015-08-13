@@ -204,7 +204,7 @@
   margin-left: 200px;
 }
 .rightPanel .content{
-  padding: 10px 40px;
+  padding: 10px 20px;
 }
 .appItem{
   display: block;
@@ -473,21 +473,28 @@ li .title{
   text-align: center;
   margin-top: 40px;
 }
-.next-container .btn.next{
+.next-container .btn.next,
+.next-container .btn.prev{
   border: 1px solid #158ad8;
   background-color: #158ad8 !important;
   width: 150px;
   border-radius: 5px;
 }
-.create-step ul{
+.create-step span, .selectedModules span{
+  font-size: 16px;
+  margin-right: 20px;
+}
+.create-step ul, .selectedModules ul{
   list-style: none;
   margin: 0;
+  display: inline-block;
+  vertical-align: middle;
   overflow: hidden;
 }
 .create-step li{
   float: left;
   position: relative;
-  padding: 10px 20px;
+  padding: 10px 25px;
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
 }
@@ -511,7 +518,17 @@ li .title{
   border-bottom:20px solid transparent;  /* left arrow slant */
   border-top:20px solid transparent; /* right arrow slant */
   border-left:20px solid #158ad8; /* bottom, add background color here */
-
+}
+.create-step li.active:before{
+  content: '';
+  position: absolute;
+  width:0px;
+  height:0px;
+  top: 0;
+  left: 0;
+  border-bottom:20px solid transparent;  /* left arrow slant */
+  border-top:20px solid transparent; /* right arrow slant */
+  border-left:20px solid #fff; /* bottom, add background color here */
 }
 .create-step li:first-child{
   border-left: 1px solid #ccc;
@@ -520,6 +537,12 @@ li .title{
 .create-step li:last-child{
   border-right: 1px solid #ccc;
   border-radius: 0 5px 5px 0;
+}
+.create-step li.active:last-child{
+  padding-right: 20px;
+}
+.create-step li:first-child::before{
+  display: none;
 }
 .create-step li:last-child::after{
   display: none
@@ -539,4 +562,248 @@ li .title{
 .create-step li.active .index{
   color: #158ad8;
   background-color: #fff;
+}
+.btn.common{
+  padding: 4px 20px;
+  margin: 5px 0;
+  background-color: #158ad8 !important;
+  border-color: #158ad8;
+  border-width: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn.common input{
+  width: 98px; 
+  height: 30px;
+}
+.applogo-container{
+  text-align: center;
+  margin-top: 40px;
+}
+.applogo-container span{
+  vertical-align: top;
+}
+.applogo-container img{
+  display: inline-block;
+  margin: 0 40px 0 20px;
+  width: 160px;
+  height: 160px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.selectImg-container{
+  display: inline-block;
+  vertical-align: bottom;
+}
+.launchPic-container{
+  position: relative;
+  border: 1px solid #ccc;
+  margin-top: 80px;
+  padding: 20px;
+}
+.launchPic-container .inlineli li{
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: middle;
+  text-align: center;
+}
+.launchPic-container ul{
+  list-style: none;
+  margin: 0;
+}
+.iphone-launch{
+  position: relative;
+  background: url('../images/iphone_launch.png');
+  width: 140px;
+  height: 296px;
+  cursor: pointer;
+}
+.android-launch{
+  position: relative;
+  background: url('../images/android_launch.png');
+  width: 150px;
+  height: 295px;
+  cursor: pointer;
+}
+.ipad-launch{
+  position: relative;
+  background: url('../images/ipad_launch.png');
+  width: 197px;
+  height: 293px;
+  cursor: pointer;
+}
+.iphone-launch img{
+  position: absolute;
+  top: 43px;
+  left: 12px;
+  height: 207px;
+  width: 118px;
+}
+.ipad-launch img{
+  position: absolute;
+  top: 29px;
+  left: 10px;
+  width: 178px;
+  height: 235px;
+}
+.android-launch img{
+  position: absolute;
+  top: 25px;
+  left: 7px;
+  width: 135px;
+  height: 240px;
+}
+.resolution{
+  margin: 5px 0;
+}
+.uploadCover{
+  position: absolute;
+  top: 43px;
+  left: 12px;
+  height: 207px;
+  width: 117px;
+  line-height: 207px;
+  background-color: rgba(0,0,0,.3);
+  display: none;
+}
+.ipad-launch .uploadCover{
+  top: 29px;
+  left: 10px;
+  width: 178px;
+  height: 235px;
+  line-height: 235px;
+}
+.android-launch .uploadCover{
+  top: 25px;
+  left: 7px;
+  width: 135px;
+  height: 240px;
+  line-height: 240px;
+}
+.iphone-launch:hover .uploadCover,
+.ipad-launch:hover .uploadCover,
+.android-launch:hover .uploadCover{
+  display: block;
+}
+.uploadCover .common{
+  vertical-align: bottom;
+}
+ul.versonInfo{
+  margin-top: 40px;
+}
+ul.versonInfo li{
+  margin-bottom: 10px;
+}
+.versonInfo label{
+  width: 60px;
+  vertical-align: top;
+}
+.versonNum{
+  width: 30px;
+}
+.versonDesc{
+  width: 400px;
+  height: 100px;
+  resize: none;
+}
+.platformType{
+  display: block;
+  position: absolute;
+  top: -40px;
+  left: -1px;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #158ad8;
+  text-align: center;
+  color: #fff;
+}
+.selectedModules{
+  margin-top: 20px;
+}
+.selectedModules li{
+  display: inline-block;
+  padding: 5px 10px;
+  background: #eee;
+  border: 1px solid #ccc;
+}
+.selectedModules .glyphicon-remove{
+  vertical-align: top;
+  margin-left: 5px;
+  color: #999;
+  cursor: pointer;
+}
+.certificate-container{
+  margin-top: 40px;
+}
+.certificate-info{
+  list-style: none;
+  margin: 0;
+}
+.certificate-info li{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.certificate-info .info-input{
+  display: inline-block;
+  vertical-align: top;
+  width: 500px;
+  text-align: left;
+}
+.info-input p{
+  text-align: left;
+  margin-top: 5px;
+}
+.certificate-info li label{
+  width: 200px;
+  text-align: right;
+  margin-right: 20px;
+}
+.certificate-info li input{
+  width: 400px;
+}
+.info-input.upload input[type="text"]{
+  width: 323px;
+}
+.uploadForm{
+  height: 400px;
+}
+.uploadForm form{
+  height: 100%;
+  cursor: pointer;
+}
+.uploadForm form p{
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.dropzone .dz-default.dz-message{
+  margin-top: 130px;
+}
+.dz-default.dz-message .btn.upgrade span{
+  display: inline-block;
+}
+.input-container{
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  margin-top: 40px;
+}
+.input-container label{
+  width: 70px;
+  text-align: right;
+  margin-right: 30px;
+}
+.input-container input,
+.input-container select,
+.input-container textarea{
+  display: inline-block;
+  vertical-align: top;
+  width: 500px;
+}
+.input-container textarea{
+  resize: none;
+}
+.input-container li{
+  margin: 10px 0;
 }

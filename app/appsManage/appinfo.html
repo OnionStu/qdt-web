@@ -80,27 +80,128 @@
           <div class="create-step">
             <span>创建步骤: </span>
             <ul>
-              <li class="active"><a href="#"><span class="index">1</span>平台选择</a></li>
-              <li><a href="appinfo.html"><span class="index">2</span>基本信息</a></li>
+              <li><a href="appplatform.html"><span class="index">1</span>平台选择</a></li>
+              <li class="active"><a href="#"><span class="index">2</span>基本信息</a></li>
               <li><a href="appmodules.html"><span class="index">3</span>模块选择</a></li>
               <li><a href="appplugins.html"><span class="index">4</span>插件选择</a></li>
               <li><a href="appcertificate.html"><span class="index">5</span>证书管理</a></li>
             </ul>
           </div>
-          <div class="apptype-container">
-            <div class="apptype active">
-              <span class="glyphicon glyphicon-ok"></span>
-              <img src="../images/icon_apple.png" alt="">
-              <h5>iOS 版本</h5>
-            </div>
-            <div class="apptype">
-              <span class="glyphicon glyphicon-ok"></span>
-              <img src="../images/icon_android.png" alt="">
-              <h5>Android 版本</h5>
-            </div>
+          <div class="applogo-container">
+            <span>应用logo: </span>
+            <img src="../images/icon_onlineapp.png" alt="">
+            <div class="selectImg-container">
+              <button class="btn common">选择图片<input class="selectPic" type="file"></button>
+              <p>支持png, jpg格式，不要超过2M</p>
+            </div>  
+          </div>
+          <div class="launchPic-container">
+            <span class="platformType">iOS版本</span>
+            <ul class="inlineli">
+              <li>
+                <div class="iphone-launch">
+                  <img src="" alt="">
+                  <div class="uploadCover">
+                    <button class="btn common">选择图片<input class="selectPic" type="file"></button>
+                  </div>
+                </div>
+                <p class="resolution">640 X 960</p>
+                <a href="#">恢复默认</a>
+              </li>
+              <li>
+                <div class="iphone-launch">
+                  <img src="" alt="">
+                  <div class="uploadCover">
+                    <button class="btn common">选择图片<input class="selectPic" type="file"></button>
+                  </div>
+                </div>
+                <p class="resolution">640 X 1136</p>
+                <a href="#">恢复默认</a>
+              </li>
+              <li>
+                <div class="iphone-launch">
+                  <img src="" alt="">
+                  <div class="uploadCover">
+                    <button class="btn common">选择图片<input class="selectPic" type="file"></button>
+                  </div>
+                </div>
+                <p class="resolution">750 X 1334</p>
+                <a href="#">恢复默认</a>
+              </li>
+              <li>
+                <div class="iphone-launch">
+                  <img src="" alt="">
+                  <div class="uploadCover">
+                    <button class="btn common">选择图片<input class="selectPic" type="file"></button>
+                  </div>
+                </div>
+                <p class="resolution">1242 X 2208</p>
+                <a href="#">恢复默认</a>
+              </li>
+              <li>
+                <div class="ipad-launch">
+                  <img src="" alt="">
+                  <div class="uploadCover">
+                    <button class="btn common">选择图片<input class="selectPic" type="file"></button>
+                  </div>
+                </div>
+                <p class="resolution">1242 X 2208</p>
+                <a href="#">恢复默认</a>
+              </li>
+            </ul>
+            <ul class="versonInfo">
+              <li>
+                <label>版本: </label>
+                <input class="versonNum" type="text">
+                <input class="versonNum" type="text">
+                <input class="versonNum" type="text">
+              </li>
+              <li>
+                <label>版本说明: </label>
+                <textarea class="versonDesc" name="" id=""></textarea>
+              </li>
+            </ul>
+          </div>
+          <div class="launchPic-container">
+            <span class="platformType">Android版本</span>
+            <ul class="inlineli">
+              <li>
+                <div class="android-launch">
+                  <img src="" alt="">
+                  <div class="uploadCover">
+                    <button class="btn common">选择图片<input class="selectPic" type="file"></button>
+                  </div>
+                </div>
+                <p class="resolution">640 X 960</p>
+                <a href="#">恢复默认</a>
+              </li>
+              <li>
+                <div class="android-launch">
+                  <img src="" alt="">
+                  <div class="uploadCover">
+                    <button class="btn common">选择图片<input class="selectPic" type="file"></button>
+                  </div>
+                </div>
+                <p class="resolution">640 X 1136</p>
+                <a href="#">恢复默认</a>
+              </li>
+            </ul>
+            <ul class="versonInfo">
+              <li>
+                <label>版本: </label>
+                <input class="versonNum" type="text">
+                <input class="versonNum" type="text">
+                <input class="versonNum" type="text">
+              </li>
+              <li>
+                <label>版本说明: </label>
+                <textarea class="versonDesc" name="" id=""></textarea>
+              </li>
+            </ul>
           </div>
           <div class="next-container">
-            <a class="btn next" href="appinfo.html">下一步</a>
+            <a class="btn prev" href="appplatform.html">上一步</a>
+            <a class="btn next" href="appmodules.html">下一步</a>
           </div>
         </div>
       </div>
