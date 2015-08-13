@@ -74,13 +74,13 @@
         </section>
       </div>
     </header>
-    <div class="appsManage container">
+    <div class="container">
       <div class="rightPanel">
         <div class="header">模块详情</div>
         <div class="content detailPage">
           <div class="app-btn btn-group pull-right">
             <button class="btn upgrade btn-round" data-toggle="modal" data-target="#upgradeModal"><span class="tableBtnIcon put"></span>升级模块</button>
-            <button class="btn edit btn-round" data-toggle="modal" data-target="#editModal"><span class="tableBtnIcon put"></span>编辑</button>
+            <a class="btn edit btn-round" href="./modulesModify.html"><span class="tableBtnIcon put"></span>编辑</a>
             <button class="btn delete btn-round"><span class="tableBtnIcon put"></span>删除</button>
           </div>
           <div class="detailBox">
@@ -127,55 +127,7 @@
           </div>
         </div>
       </div>
-      <div class="bsl modal fade" id="upgradeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">上传模块</h4>
-            </div>
-            <div class="modal-body">
-              <form class="updateModuleForm">
-                <div>
-                  <label for="moduleName2">模块名称</label>
-                  <input type="text" class="textInput form-control" id="moduleName2" name="moduleName" value="模块1" disabled>
-                </div>
-                <div>
-                  <label for="moduleIdentifier2">模块标识</label>
-                  <input type="text" class="textInput form-control" id="moduleIdentifier2" name="moduleIdentifier" value="com.foreveross.model" disabled>
-                </div>
-                <div>
-                  <label for="moduleSize2">文件大小</label>
-                  <input type="text" class="textInput form-control" id="moduleSize2" name="moduleSize" value="10.5M" disabled>
-                </div>
-                <div>
-                  <label for="moduleVersion2">版本号</label>
-                  <div class="formRow numRow">
-                    <input type="text" class="textInput form-control num" id="moduleVersion2" name="moduleVersion" value="1" disabled>
-                    <input type="text" class="textInput form-control num" id="" name="moduleVersion" value="2" disabled>
-                    <input type="text" class="textInput form-control num" id="" name="moduleVersion" value="3" disabled>
-                  </div>
-                </div>
-                <div>
-                  <label for="moduleBulidNum2">构建号</label>
-                  <div class="formRow numRow">
-                    <input type="text" class="textInput form-control num" id="moduleBulidNum2" name="moduleBulidNum" value="19" disabled>
-                  </div>
-                </div>
-                <div>
-                  <label for="updateDesc" class="toplabel">更新内容</label>
-                  <div class="formRow">
-                    <textarea class="desc form-control" id="updateDesc" name="updateDesc" disabled>1234</textarea>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn commit">创建模块</button>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div class="bsl modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -184,7 +136,7 @@
               <h4 class="modal-title" id="myModalLabel">更新模块</h4>
             </div>
             <div class="modal-body">
-              <form class="updateModuleForm">
+              <form class="editModuleForm">
                 <div>
                   <label for="moduleName2">模块名称</label>
                   <input type="text" class="textInput form-control" id="moduleName2" name="moduleName" value="模块1" disabled>
