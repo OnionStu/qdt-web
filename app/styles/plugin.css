@@ -4,6 +4,7 @@
 #pluginList .content{
   padding: 15px;
 }
+
 .main{
   width: 90%;
   margin: 0 auto;
@@ -73,4 +74,17 @@
 .logoImg{
   border-radius: 8px;
   border:1px solid #ccc;
+}
+.tableTitle{
+  width: 20%;
+}
+.tableTitle.desc{
+  width: 40%;
+}
+.btn-group .btn {
+    width: 120px;
+    border: none;
+}
+.detailPage .btn-group .btn {
+    margin-left: 3px;
 }
