@@ -78,8 +78,8 @@
         <div class="header">插件详情</div>
         <div class="content detailPage">
           <div class="app-btn btn-group pull-right">
-            <button class="btn upgrade btn-round" data-toggle="modal" data-target="#upgradeModal"><span class="tableBtnIcon put"></span>上传</button>
-            <button class="btn edit btn-round" data-toggle="modal" data-target="#editModal"><span class="tableBtnIcon put"></span>编辑</button>
+            <button class="btn upgrade btn-round" data-toggle="modal" data-target="#editModal"><span class="tableBtnIcon put"></span>上传</button>
+            <a class="btn edit btn-round" href="./pluginModify.html"><span class="tableBtnIcon put"></span>编辑</a>
             <button class="btn delete btn-round"><span class="tableBtnIcon put"></span>删除</button>
           </div>
           <div class="detailBox">
@@ -196,63 +196,6 @@
                   </ul>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bsl modal fade" id="upgradeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">上传插件</h4>
-            </div>
-            <div class="modal-body">
-              <form class="updatePluginForm">
-                <div>
-                  <label for="pluginPlatform2">平台</label>
-                  <input type="text" class="textInput form-control" id="pluginPlatform2" name="pluginPlatform" value="android" disabled>
-                </div>
-                <div>
-                  <label for="pluginSize">文件大小</label>
-                  <input type="text" class="textInput form-control" id="pluginSize" name="pluginSize" value="10.6M" disabled>
-                </div>
-                <div>
-                  <label for="moduleName2">插件名称</label>
-                  <input type="text" class="textInput form-control" id="moduleName2" name="moduleName" value="插件132" >
-                </div>
-                <div>
-                  <label for="pluginIdentifier2">插件标识</label>
-                  <!-- <input type="text" class="textInput form-control" id="moduleName2" name="moduleName" value="模块1" > -->
-                  <select class="" name="pluginIdentifier">
-                    <option value ="1.0">com.foreveross.model</option>
-                    <option value ="2.0">com.foreveross.plugin</option>
-                    <option value="3.0">com.foreveross.user123</option>
-                    <option value="4.0">4.0</option>
-                  </select>
-                </div>
-                <div>
-                  <label for="pluginClassName">类名</label>
-                  <input type="text" class="textInput form-control" id="pluginClassName" name="pluginClassName" value="plugin" >
-                </div>
-                <div>
-                  <label for="moduleVersion2">版本号</label>
-                  <div class="formRow numRow">
-                    <input type="text" class="textInput form-control num" id="moduleVersion2" name="moduleVersion" value="1" >
-                    <input type="text" class="textInput form-control num" id="" name="moduleVersion" value="2" >
-                    <input type="text" class="textInput form-control num" id="" name="moduleVersion" value="3" >
-                  </div>
-                </div>
-                <div>
-                  <label for="updateDesc" class="toplabel">插件描述</label>
-                  <div class="formRow">
-                    <textarea class="desc form-control" id="updateDesc" name="updateDesc" >1234</textarea>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn commit">保存插件</button>
             </div>
           </div>
         </div>

@@ -58,6 +58,9 @@
 .btn.upload{
   border: none;
 }
+.btn.upload:focus,.btn.back:focus,.btn.save:focus{
+  outline: none;
+}
 [class$="Form"] .btn{
   width: 120px;
   position: relative;
@@ -87,4 +90,18 @@
 }
 .detailPage .btn-group .btn {
     margin-left: 3px;
+}
+[class$="Form"] label{
+  width: 60px;
+  text-align: left;
+}
+[class$="Form"] .formRow.numRow{
+  padding: 0;
+}
+[class$="Form"] .textInput.num{
+  width: 2.5em;
+  text-align: center;
+} 
+[class$="Form"] .textInput.num:first-child{
+  margin-left: 0;
 }
