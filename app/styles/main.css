@@ -777,3 +777,15 @@ button.msg+.righttopNum{
     display: block;
     text-align: center;
 }
+/*.detaiInfoTabs */
+.detaiInfoTabs .nav-tabs a {
+    width: 200px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+}
+.detaiInfoTabs .nav-tabs>li.active>a, .detaiInfoTabs .nav-tabs>li.active>a:focus, .detaiInfoTabs .nav-tabs>li.active>a:hover {
+    color: #fff;
+    background-color: #158ad8;
+    box-shadow: none;
+}
