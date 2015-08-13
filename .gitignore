@@ -9,3 +9,6 @@ modulesList2.html
 pluginList2.html
 modulesModify2.html
 pluginModify2.html
+app/modules/modulesCreate2.html
+app/modules/modulesUpdate.html
+app/modules/modulesUpload.html
